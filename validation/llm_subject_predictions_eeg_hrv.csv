@@ -1,0 +1,38 @@
+Subject,Subject Condition,LLM Output,LLM Decision,Confidence
+subject_0_394,Healthy,"Conclusion: No  
+Explanation: The EEG summary shows low alpha ratios in several channels, indicating some level of alpha suppression. However, the HRV summary does not show significant suppression (SDNN = 60.74ms), which is above the threshold for concern. Since there is no HRV suppression and only one EEG feature (alpha suppression) without widespread or strong evidence across multiple regions, the criteria for MCI are not met. Therefore, the subject lacks sufficient abnormality for an MCI diagnosis.",healthy,confident
+subject_0_399,Healthy,"Conclusion: No  
+Explanation: The EEG summary indicates low alpha ratios in multiple frontal and parietal regions, suggesting alpha suppression. However, the HRV summary shows no significant suppression (SDNN = 54.35ms), which does not meet the criteria for HRV suppression. Since there is no HRV suppression and only one strong EEG feature (alpha suppression) without additional supporting features, the evidence is insufficient to classify the case as MCI.",healthy,confident
+subject_0_462,Healthy,"Conclusion: No
+
+Explanation: The EEG summary indicates low beta ratios in several channels, suggesting beta suppression, but there is no evidence of alpha suppression or theta elevation. Additionally, the HRV summary shows no significant suppression (SDNN = 70.78ms), which does not support reduced autonomic flexibility. Since neither of the criteria for MCI diagnosis is met, and the findings are not strong or consistent enough, the evidence does not support a diagnosis of MCI.",healthy,confident
+subject_0_463,Healthy,"Conclusion: Yes  
+Explanation: The case presents with two clear features consistent with MCI: widespread alpha suppression across multiple regions (T8, AF4, O2, P8) and HRV suppression (SDNN = 28.49ms). The presence of these two features meets the criteria for MCI diagnosis according to the ontology reference.",mci,confident
+subject_0_468,Healthy,"Conclusion: No  
+Explanation: The EEG summary shows low alpha ratios in multiple regions, which suggests alpha suppression. However, there is no HRV suppression (SDNN = 65.70 ms), and the beta suppression is isolated to a single instance. The findings do not meet the criteria for strong evidence of MCI, as there is no convergence of at least two strong features or a single strong EEG feature with HRV suppression. Therefore, the evidence is insufficient to classify this case as MCI.",healthy,confident
+subject_0_475,Healthy,"Conclusion: Needs clinical review
+
+Explanation: The EEG summary indicates low alpha ratios across multiple regions, suggesting potential alpha suppression. However, the HRV summary does not show significant suppression (SDNN = 34.49ms), which does not meet the criteria for HRV suppression. While there is evidence of alpha suppression, the lack of HRV suppression and the absence of other strong EEG features (such as theta elevation or beta suppression) make the findings borderline. Therefore, the case should be deferred for clinical review to ensure accurate diagnosis.",uncertain,borderline
+subject_0_476,Healthy,"Conclusion: No
+
+Explanation: The EEG summary indicates low alpha ratios in several channels, suggesting alpha suppression. However, the HRV summary shows no significant suppression (SDNN = 36.61ms), which does not meet the criteria for HRV suppression. Additionally, there is no mention of theta elevation or beta suppression. Since the evidence does not strongly meet either of the diagnostic rules for MCI, the subject lacks sufficient abnormality for a diagnosis.",healthy,confident
+subject_1_397,MCI,"Conclusion: Needs clinical review
+
+Explanation: The EEG summary indicates widespread alpha suppression across multiple frontal regions (AF3, AF4, F3, F7, F8, FC5), which is a strong EEG feature. However, the HRV summary does not show significant suppression (SDNN = 41.39ms), which is above the threshold for concern. While the EEG findings are notable, the lack of HRV suppression means the criteria for a definitive MCI diagnosis are not fully met. Given the strong EEG feature but absence of HRV suppression, the case is borderline and should be deferred for clinical review.",uncertain,borderline
+subject_1_455,MCI,"Conclusion: Yes  
+Explanation: The case shows strong evidence for MCI as it meets the criteria under the second rule. There is a single strong EEG feature of widespread beta suppression across multiple frontal regions (EEG.AF3, EEG.AF4, EEG.F3, EEG.F4, EEG.F7, and EEG.F8) along with HRV suppression (SDNN = 23.77ms, below the 30ms threshold). This convergence of features supports a classification consistent with MCI.",mci,confident
+subject_1_456,MCI,"Conclusion: Yes  
+Explanation: The case shows strong evidence for MCI. There is widespread alpha suppression across multiple regions (EEG.F8, EEG.FC5, EEG.P7, EEG.T7) and HRV suppression (SDNN = 20.55ms). This satisfies the second diagnostic rule, where a single strong EEG feature (widespread alpha suppression) is present along with HRV suppression.",mci,confident
+subject_1_457,MCI,"Conclusion: Yes
+
+Explanation: The case presents strong evidence for MCI under the first rule. There is clear alpha suppression in multiple frontal regions (EEG.AF3 and EEG.F3) with consistently low alpha ratios, indicating a strong EEG feature. Additionally, HRV suppression is present with an SDNN of 25.03 ms, which is below the 30 ms threshold. These two features together meet the criteria for MCI diagnosis.",mci,confident
+subject_1_459,MCI,"Conclusion: Yes  
+Explanation: The case presents with strong evidence for MCI. There is widespread beta suppression across multiple EEG channels (EEG.AF3, EEG.F3, EEG.P7, EEG.T7, EEG.AF4, EEG.F4, EEG.F7) with very low beta ratios, indicating significant beta disorganization. Additionally, HRV suppression is present with an SDNN of 28.56 ms, which is below the 30 ms threshold. This combination of a single strong EEG feature (widespread beta suppression) along with HRV suppression meets the criteria for MCI diagnosis.",mci,confident
+subject_1_461,MCI,"Conclusion: Yes
+
+Explanation: The case presents strong evidence for MCI under the diagnostic guidance. There is widespread alpha suppression, particularly in multiple frontal regions (EEG.AF3, EEG.F8, EEG.FC6), which is a strong EEG feature. Additionally, there is HRV suppression with an SDNN of 24.81 ms, which is below the 30 ms threshold. The combination of these findings meets the criteria for MCI diagnosis as per the ontology reference.",mci,confident
+subject_1_464,MCI,"Conclusion: Yes  
+Explanation: The case presents strong evidence for MCI. There is widespread alpha suppression, particularly in multiple frontal (EEG.F3) and parietal (EEG.P8) regions, which is a strong EEG feature. Additionally, there is HRV suppression with an SDNN of 27.69 ms, which is below the 30 ms threshold. This combination of a single strong EEG feature along with HRV suppression meets the criteria for MCI diagnosis.",mci,confident
+subject_1_467,MCI,"Conclusion: Yes
+
+Explanation: The case presents with strong evidence for MCI under the diagnostic guidance. There is a clear presence of HRV suppression (SDNN = 27.87ms, below the 30ms threshold) and significant beta suppression across multiple frontal regions (EEG.AF3, EEG.AF4, EEG.F3, EEG.F4) with consistently low beta ratios (0.01). This satisfies the criteria of a single strong EEG feature (widespread beta suppression) along with HRV suppression, supporting a conclusion consistent with MCI.",mci,confident

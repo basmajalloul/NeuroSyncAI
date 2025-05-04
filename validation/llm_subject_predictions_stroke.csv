@@ -1,0 +1,276 @@
+Subject,Subject Condition,LLM Output,LLM Decision
+Sub01_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip (43.16°), knee (60.77°), and ankle (26.80°) joints, which is typical of healthy individuals. The jerk values for all joints are very low (0.00 for hip and ankle, 0.01 for knee), indicating smooth movement. Additionally, the acceleration standard deviations are low, suggesting consistent acceleration. These findings align with the patterns expected in control subjects.",Control
+Sub01_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the ankle (11.64°) and high jerk values in both the knee (0.68) and ankle (0.48). These findings align with stroke-related gait patterns, which include reduced motion range and higher joint jerk. The combination of these factors across multiple joints supports a classification of Stroke.",Stroke
+Sub02_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (35.54°) and knee (42.96°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.38, knee: 0.04, ankle: 0.04) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.39, knee: 0.14, ankle: 0.08), further supporting the classification as a control subject. There are no signs of high jerk or reduced motion range that would suggest stroke-related gait patterns.",Control
+Sub02_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (37.40°) and ankle (22.33°), which are lower than typical healthy ranges. Additionally, the joint jerk values for the hip (0.48), knee (0.49), and ankle (0.46) are relatively high, indicating erratic motion. These patterns align with stroke-related gait characteristics, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub03_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (43.64°) and knee (50.71°), which is typical of healthy individuals. The ankle range is slightly lower but not significantly reduced. The jerk values for all joints are very low (0.00 for hip, 0.02 for knee, and 0.01 for ankle), indicating smooth movement. The acceleration standard deviations are also low, suggesting consistent acceleration. These patterns align with those of a healthy control subject.",Control
+Sub03_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (24.46°) and ankle (14.69°), which are lower than typical healthy ranges. Additionally, the knee shows high jerk (0.75), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub04_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (40.24°) and knee (51.96°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.31, knee: 0.06, ankle: 0.04) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.33, knee: 0.18, ankle: 0.08), further supporting the classification as a control subject. There are no signs of reduced motion range or high jerk that would suggest stroke-related gait patterns.",Control
+Sub04_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the ankle (15.23°) and relatively high jerk values in both the hip (0.54) and knee (0.44) joints. These findings align with stroke-related gait patterns, which include reduced motion range and higher joint jerk. The combination of these factors across multiple joints suggests a classification of Stroke.",Stroke
+Sub05_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a hip range of 38.05° and a knee range of 41.34°, both of which suggest a relatively wide range of motion typical of healthy individuals. The ankle range is slightly lower at 16.52°, but not significantly reduced. The jerk values for all joints (hip: 0.02, knee: 0.03, ankle: 0.07) are low, indicating smooth movement. The acceleration standard deviations are also low, suggesting consistent acceleration. Overall, the gait patterns align with those of a healthy individual.",Control
+Sub05_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (25.70°) and ankle (13.42°), which are both lower than typical healthy ranges. Additionally, the hip shows a relatively high jerk value (0.73), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion range and increased jerk.",Stroke
+Sub06_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (43.30°) and knee (54.84°), which is typical of healthy individuals. The jerk values for all joints are low (hip: 0.17, knee: 0.02, ankle: 0.09), indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.20, knee: 0.18, ankle: 0.12), further supporting the classification as a control subject. There are no signs of erratic motion or reduced range of motion that would suggest stroke-related gait patterns.",Control
+Sub06_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the ankle (19.89°) and high jerk in the knee (0.53), which are indicative of stroke-related gait patterns. The combination of these factors across multiple joints suggests a classification of Stroke according to the provided ontology.",Stroke
+Sub07_Control,Control,"Conclusion: Control
+Explanation: The subject exhibits a wide range of motion in the hip (43.01°) and knee (60.34°), which is typical of healthy individuals. The jerk values for all joints are low (hip: 0.24, knee: 0.11, ankle: 0.03), indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints, further supporting a pattern typical of control subjects. There are no signs of erratic motion or reduced range that would suggest stroke-related gait.",Control
+Sub07_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (31.76°) and ankle (15.76°), which are lower than typical healthy ranges. Additionally, both the hip and ankle show high jerk values (0.16 and 0.17, respectively), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub08_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (41.00°) and knee (53.56°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.72, knee: 0.29, ankle: 0.11) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.73, knee: 0.34, ankle: 0.13), further supporting the classification as a control subject. There are no signs of high jerk or reduced motion range that would suggest stroke-related gait patterns.",Control
+Sub08_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (38.24°) and ankle (21.56°), which are lower than typical healthy ranges. Additionally, the ankle shows high jerk (0.21), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub09_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (46.73°) and knee (53.16°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.55, knee: 0.08, ankle: 0.03) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.56, knee: 0.19, ankle: 0.08), further supporting the classification as a control subject. There are no signs of high jerk or reduced motion range that would suggest stroke-related gait patterns.",Control
+Sub09_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits a reduced range of motion in the ankle (19.48°), which is significantly lower than typical healthy ranges. Additionally, the hip range of motion is also somewhat limited at 47.04°. Although the knee shows a normal range of motion, the combination of reduced motion in the hip and ankle, along with the presence of high jerk in the hip (0.41), suggests a pattern consistent with stroke-related gait. These findings across multiple joints indicate a classification of Stroke.",Stroke
+Sub10_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (44.83°) and knee (53.43°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.19, knee: 0.10, ankle: 0.27) are relatively low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and not excessively variable (hip: 0.21, knee: 0.20, ankle: 0.28). These factors suggest that the subject's gait patterns align with those of a healthy individual rather than a stroke patient.",Control
+Sub10_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (27.50°) and ankle (8.09°), which are lower than typical healthy ranges. Additionally, the ankle shows high jerk (0.47), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion and increased jerk.",Stroke
+Sub11_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (44.10°) and knee (51.27°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.24, knee: 0.02, ankle: 0.07) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.26, knee: 0.16, ankle: 0.11), further supporting the classification as a control subject. There are no signs of erratic motion or reduced range of motion that would suggest stroke-related gait patterns.",Control
+Sub11_Stroke,Stroke,"Conclusion: Stroke  
+Explanation: The subject exhibits high jerk values in both the knee (0.71) and ankle (0.62) joints, which are indicative of erratic motion. Additionally, the ankle range of motion is notably low at 20.10°, suggesting reduced mobility. These patterns align with stroke-related gait characteristics, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub12_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a hip range of 40.90°, knee range of 45.90°, and ankle range of 26.15°, which are within normal variability for healthy individuals. The jerk values for all joints (hip: 0.27, knee: 0.13, ankle: 0.25) are low, indicating smooth motion. Additionally, the acceleration standard deviations (hip: 0.29, knee: 0.20, ankle: 0.27) suggest consistent acceleration. These findings align with the patterns typical of healthy individuals, with no indication of reduced range of motion or high jerk that would suggest stroke-related gait.",Control
+Sub12_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits a reduced range of motion in the ankle (15.06°) and a high jerk value (0.24) for the ankle joint, which are indicative of stroke-related gait patterns. Additionally, the hip and knee ranges are relatively low, and the ankle's acceleration standard deviation is higher than typical for healthy individuals. These factors suggest erratic motion and reduced joint mobility, consistent with stroke-related gait.",Stroke
+Sub13_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip and knee joints, which is typical of healthy individuals. The jerk values for all joints are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low, further supporting the classification as a control subject. There are no signs of erratic motion or reduced range of motion that would suggest stroke-related gait patterns.",Control
+Sub13_Stroke,Stroke,"Conclusion: Stroke  
+Explanation: The subject exhibits reduced range of motion in the hip (37.40°) and ankle (20.79°), which are lower than typical healthy ranges. Additionally, the knee shows a relatively high jerk value (0.46), indicating erratic motion. These findings across multiple joints suggest patterns typical of stroke-related gait.",Stroke
+Sub14_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip (46.00°) and knee (57.47°), which is typical of healthy individuals. The jerk values for all joints are low (hip: 0.52, knee: 0.35, ankle: 0.04), indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints, further supporting a pattern of smooth and controlled motion. These findings align with the characteristics of a control (healthy) subject.",Control
+Sub14_Stroke,Stroke,"Conclusion: Stroke  
+Explanation: The subject exhibits a reduced range of motion in the ankle (14.80°) and a relatively low range in the hip (35.74°), which are indicative of stroke-related gait patterns. Additionally, the hip and knee joints show higher jerk values (0.29 and 0.24, respectively), suggesting erratic motion. These findings align with stroke-related gait characteristics, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub15_Control,Control,"Conclusion: Control
+Explanation: The subject exhibits a wide range of motion in the hip (43.55°) and knee (51.13°), which is typical of healthy individuals. The jerk values for all joints are low (hip: 0.57, knee: 0.02, ankle: 0.13), indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints, further supporting a pattern of smooth and controlled motion. These findings align with the characteristics of a control (healthy) subject.",Control
+Sub15_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (34.14°) and ankle (14.54°), which are lower than typical healthy ranges. Additionally, the knee shows a relatively high jerk value (0.43), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion range and increased jerk.",Stroke
+Sub16_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (44.20°) and knee (46.00°), which is typical of healthy individuals. The jerk values for all joints are low (hip: 0.38, knee: 0.03, ankle: 0.00), indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.39, knee: 0.16, ankle: 0.10), further supporting the classification as a control subject. There are no signs of erratic motion or reduced range of motion that would suggest stroke-related gait patterns.",Control
+Sub16_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (45.01°) and ankle (27.06°), which are lower than typical healthy ranges. Additionally, the knee shows a high jerk value (0.57), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub17_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (44.67°) and knee (50.65°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.08, knee: 0.03, ankle: 0.02) are low, indicating smooth movement. Additionally, the acceleration standard deviations (hip: 0.13, knee: 0.16, ankle: 0.08) are consistent with normal variability. These factors suggest that the subject's gait patterns align with those of a healthy individual.",Control
+Sub17_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (39.54°) and ankle (33.21°), which are lower than typical healthy ranges. Additionally, the ankle shows high jerk (0.14), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion and increased jerk.",Stroke
+Sub18_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (45.81°) and knee (56.61°), which is typical of healthy individuals. The jerk values for all joints are low (hip: 0.01, knee: 0.31, ankle: 0.18), indicating smooth movement. Additionally, the acceleration standard deviations are consistent and not excessively high (hip: 0.11, knee: 0.35, ankle: 0.20), further supporting the classification as a control subject. There are no signs of reduced motion range or high jerk that would suggest stroke-related gait patterns.",Control
+Sub18_Stroke,Stroke,"Conclusion: Stroke  
+Explanation: The subject exhibits reduced range of motion in the ankle (17.91°) and relatively high jerk values across all joints, particularly the hip (0.23) and knee (0.21). These patterns are indicative of stroke-related gait, as they suggest erratic motion and limited joint movement.",Stroke
+Sub19_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (41.11°) and knee (55.26°), which is typical of healthy individuals. The ankle range is slightly lower but not significantly concerning. The jerk values for all joints are low (0.27 for hip and knee, 0.18 for ankle), indicating smooth movement. The acceleration standard deviations are also low, suggesting consistent acceleration. These findings align with the patterns expected in control (healthy) subjects.",Control
+Sub19_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in both the hip (18.75°) and knee (15.65°) joints, which is indicative of stroke-related gait patterns. Additionally, the hip joint shows a relatively high jerk value (0.16), further supporting the classification of stroke. These findings align with the ontology reference for stroke-related gait, where multiple joints show high jerk or low range of motion.",Stroke
+Sub20_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in all joints (hip, knee, and ankle), which is typical of healthy individuals. The jerk values are low, indicating smooth movement, and the acceleration standard deviations are consistent, further supporting a pattern of controlled and stable gait. These findings align with the characteristics of a control subject.",Control
+Sub20_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (24.36°) and ankle (15.74°), which are lower than typical healthy ranges. Additionally, both the knee and ankle show high jerk values (0.30), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints demonstrate high jerk and reduced motion range.",Stroke
+Sub21_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a hip range of 39.64°, knee range of 49.47°, and ankle range of 19.04°, which are within typical ranges for healthy individuals. The jerk values for all joints (hip: 0.22, knee: 0.24, ankle: 0.17) are low, indicating smooth motion. Additionally, the acceleration standard deviations are consistent and not indicative of erratic motion. These findings suggest the subject's gait is typical of a healthy individual.",Control
+Sub21_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (38.08°) and ankle (17.14°), which are both lower than typical healthy ranges. Additionally, the hip joint shows a relatively high jerk value of 0.73, indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion range and higher jerk.",Stroke
+Sub22_Control,Control,"Conclusion: Control
+Explanation: The subject exhibits a wide range of motion in the hip and knee joints, which is typical of healthy individuals. The jerk values for all joints are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and not indicative of erratic motion. These findings align with the patterns expected in control subjects.",Control
+Sub22_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in all joints (hip, knee, and ankle) compared to typical healthy ranges. Additionally, the hip joint shows a relatively high jerk value. These patterns align with stroke-related gait characteristics, where multiple joints demonstrate reduced motion range and increased jerk, indicating erratic motion.",Stroke
+Sub23_Control,Control,"Conclusion: Control
+Explanation: The subject exhibits a wide range of motion in the hip and knee joints, with smooth movement indicated by low jerk values and consistent acceleration. The ankle joint also shows low jerk and standard deviation in acceleration, suggesting smooth and controlled motion. These patterns align with those typical of healthy individuals.",Control
+Sub23_Stroke,Stroke,"Conclusion: Stroke  
+Explanation: The subject exhibits reduced range of motion in the hip (39.85°) and ankle (23.74°), which are lower than typical healthy ranges. Additionally, the hip shows a relatively high jerk value (0.63), indicating erratic motion. These findings across multiple joints suggest patterns typical of stroke-related gait.",Stroke
+Sub24_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip (40.62°) and knee (57.55°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.26, knee: 0.32, ankle: 0.21) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and not indicative of erratic motion. These factors align with the patterns expected in control subjects.",Control
+Sub24_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits high jerk values in both the knee (1.01) and ankle (0.68) joints, which are indicative of erratic motion. Additionally, the hip and ankle joints show a reduced range of motion (26.32° and 25.32°, respectively). These patterns align with stroke-related gait characteristics, where multiple joints demonstrate high jerk and reduced motion range.",Stroke
+Sub25_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip (41.89°) and knee (54.00°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.52, knee: 0.36, ankle: 0.13) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints, further supporting the classification as a Control subject.",Control
+Sub25_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the ankle (8.26°) and hip (30.25°), which are both lower than typical healthy ranges. Additionally, the hip shows a relatively high jerk value of 0.64, indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion range and higher jerk.",Stroke
+Sub26_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (52.13°) and knee (55.70°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.06, knee: 0.19, ankle: 0.11) are relatively low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and not excessively high, suggesting stable and controlled motion. These factors align with the characteristics of a control (healthy) subject.",Control
+Sub26_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (29.45°) and ankle (18.36°) joints, which are lower than typical healthy ranges. Additionally, the hip joint shows a relatively high jerk value (0.92), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion range and higher jerk.",Stroke
+Sub27_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a hip range of 39.72°, knee range of 55.24°, and ankle range of 20.24°, all of which suggest a relatively wide range of motion typical of healthy individuals. The jerk values for the hip (0.37), knee (0.10), and ankle (0.18) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints, further supporting the classification as a Control subject. There are no signs of high jerk or reduced motion range in multiple joints, which would suggest stroke-related gait.",Control
+Sub27_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits a reduced range of motion in the hip (41.60°) and ankle (34.83°) joints, which is indicative of stroke-related gait patterns. Additionally, the knee joint shows a high jerk value (0.90), further supporting the classification of stroke. These findings align with the ontology reference for stroke-related gait, where multiple joints show high jerk or reduced motion range.",Stroke
+Sub28_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip (44.25°) and knee (56.78°), which is typical of healthy individuals. The jerk values for all joints are low (hip: 0.23, knee: 0.19, ankle: 0.08), indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints, further supporting a pattern of smooth and controlled motion. These findings align with the characteristics of a control (healthy) subject.",Control
+Sub28_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (32.34°) and ankle (23.38°), which are lower than typical healthy ranges. Additionally, the knee shows a high jerk value (0.51), indicating erratic motion. These findings across multiple joints align with stroke-related gait patterns, leading to a classification of Stroke.",Stroke
+Sub29_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (42.30°) and knee (59.35°), which is typical of healthy individuals. The ankle range is slightly lower but not significantly reduced. The jerk values for all joints are low (hip: 0.28, knee: 0.22, ankle: 0.05), indicating smooth movement. The acceleration standard deviations are consistent across joints, suggesting stable and controlled motion. These patterns align with those of a healthy control subject.",Control
+Sub29_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (27.20°) and ankle (17.08°), which are lower than typical healthy ranges. Additionally, the ankle shows high jerk (0.10), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub30_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (50.54°) and knee (62.34°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.25, knee: 0.12, ankle: 0.30) are relatively low, indicating smooth movement. The acceleration standard deviations are also consistent and not indicative of erratic motion. These factors suggest that the subject's gait patterns align with those of a healthy individual.",Control
+Sub30_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (31.21°) and ankle (15.78°), which are lower than typical healthy ranges. Additionally, the hip and knee joints both show high jerk values (0.24), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints demonstrate high jerk and reduced motion range.",Stroke
+Sub31_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (50.03°) and knee (66.16°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.12, knee: 0.09, ankle: 0.16) are low, indicating smooth movement. Additionally, the acceleration standard deviations (hip: 0.17, knee: 0.23, ankle: 0.19) are consistent with normal variability. These factors suggest that the subject's gait patterns align with those of a healthy individual.",Control
+Sub31_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (40.14°) and ankle (30.32°), which are lower than typical healthy ranges. Additionally, the hip shows a relatively high jerk value (0.52), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion range and higher jerk.",Stroke
+Sub32_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (39.12°) and knee (50.56°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.16, knee: 0.15, ankle: 0.04) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and not excessively high, suggesting stable and controlled motion. These factors align with the characteristics of a control (healthy) subject.",Control
+Sub32_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the ankle (18.81°) and high jerk in the knee (0.26), which are indicative of stroke-related gait patterns. The combination of these factors across multiple joints suggests a pattern consistent with stroke patients.",Stroke
+Sub33_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (47.69°) and knee (58.39°), which is typical of healthy individuals. The ankle range is slightly lower but not significantly reduced. The jerk values for all joints (hip: 0.14, knee: 0.25, ankle: 0.12) are low, indicating smooth movement. The acceleration standard deviations are also low (hip: 0.18, knee: 0.30, ankle: 0.15), suggesting consistent acceleration. These findings align with the patterns expected in healthy individuals, with no indication of the erratic motion or reduced range typical of stroke-related gait.",Control
+Sub33_Stroke,Stroke,"Conclusion: Stroke  
+Explanation: The subject exhibits reduced range of motion in the hip (23.54°) and ankle (14.93°), which are lower than typical healthy ranges. Additionally, the hip shows a relatively high jerk value (0.46), indicating erratic motion. These findings across multiple joints suggest a pattern consistent with stroke-related gait.",Stroke
+Sub34_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip (40.86°) and knee (59.72°), which is typical of healthy individuals. The jerk values for all joints are low (hip: 0.13, knee: 0.09, ankle: 0.01), indicating smooth movement. Additionally, the acceleration standard deviations are within normal limits, suggesting consistent acceleration. These factors align with the characteristics of a control subject.",Control
+Sub34_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (34.79°) and ankle (17.38°), which are lower than typical healthy ranges. Additionally, the knee shows a relatively high jerk value (0.46), indicating erratic motion. These findings across multiple joints suggest patterns typical of stroke-related gait, with both reduced motion range and increased jerk.",Stroke
+Sub35_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip (52.11°) and knee (63.03°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.29, knee: 0.11, ankle: 0.08) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints, further supporting a pattern of smooth and controlled motion. These findings align with the characteristics of a control (healthy) subject.",Control
+Sub35_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (38.36°) and ankle (26.40°), which are lower than typical healthy ranges. Additionally, the knee shows high jerk (0.33), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub36_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip (47.54°) and knee (61.27°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.16, knee: 0.09, ankle: 0.19) are low, indicating smooth movement. The acceleration standard deviations are consistent across joints, suggesting stable and controlled motion. These findings align with the patterns expected in control subjects.",Control
+Sub36_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (44.75°) and ankle (17.86°), which are lower than typical healthy ranges. Additionally, the knee shows a high jerk value (0.74), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub37_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (42.82°) and knee (55.17°), which is typical of healthy individuals. The ankle range is slightly lower but not significantly reduced. The jerk values for all joints are low (hip: 0.14, knee: 0.11, ankle: 0.01), indicating smooth movement. The acceleration standard deviations are consistent and do not suggest erratic motion. Overall, the gait patterns align with those of a healthy individual.",Control
+Sub37_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (35.41°) and ankle (13.84°), which are lower than typical healthy ranges. Additionally, the knee shows high jerk (0.78), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub38_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (45.62°) and knee (54.43°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.47, knee: 0.16, ankle: 0.24) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.49, knee: 0.25, ankle: 0.25), further supporting the classification as a control subject. There are no signs of reduced motion range or high jerk that would suggest stroke-related gait patterns.",Control
+Sub38_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits a reduced range of motion in the ankle (15.91°), which is significantly lower than typical healthy ranges. Additionally, the hip range of motion is also somewhat limited at 40.63°. Although the jerk values are not particularly high, the combination of reduced motion range in two joints (hip and ankle) aligns with stroke-related gait patterns.",Stroke
+Sub39_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip (45.19°), knee (60.69°), and ankle (38.74°), which is typical of healthy individuals. The jerk values (hip: 0.18, knee: 0.34, ankle: 0.34) and acceleration standard deviations (hip: 0.21, knee: 0.38, ankle: 0.38) are within normal variability, indicating smooth and consistent movement. There are no signs of high jerk or reduced motion range in multiple joints, suggesting a control pattern.",Control
+Sub39_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (45.07°) and ankle (32.04°), which are lower than typical healthy ranges. Additionally, the knee shows a high jerk value (0.28), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show high jerk or reduced motion range.",Stroke
+Sub40_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a hip range of 45.38°, knee range of 54.48°, and ankle range of 23.45°, which are indicative of a healthy range of motion. The jerk values for the hip (0.22), knee (0.50), and ankle (0.28) are relatively low, suggesting smooth movement. Additionally, the acceleration standard deviations are consistent and not excessively high, further supporting the classification as a control subject. There is no indication of reduced motion range or high jerk across multiple joints, which would suggest stroke-related gait patterns.",Control
+Sub40_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (27.11°) and ankle (15.49°), which are lower than typical healthy ranges. Additionally, the knee shows a relatively high jerk value (0.41), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion range and increased jerk.",Stroke
+Sub41_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (38.20°) and knee (53.39°), which is typical of healthy individuals. The ankle range is slightly lower but not significantly reduced. The jerk values for all joints are low (hip: 0.54, knee: 0.30, ankle: 0.05), indicating smooth movement. The acceleration standard deviations are also low, suggesting consistent acceleration. These patterns align with those of a control (healthy) subject.",Control
+Sub41_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits high jerk values in both the knee (0.49) and ankle (0.51) joints, which are indicative of erratic motion. Additionally, the hip and ankle show reduced ranges of motion (hip: 37.97°, ankle: 35.43°), which are consistent with stroke-related gait patterns. These findings across multiple joints suggest a classification of Stroke.",Stroke
+Sub42_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (33.57°) and knee (47.11°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.61, knee: 0.12, ankle: 0.04) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.61, knee: 0.19, ankle: 0.09), further supporting the classification as a control subject. There are no signs of high jerk or reduced motion range that would suggest stroke-related gait patterns.",Control
+Sub42_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (26.05°) and ankle (9.39°), which are both lower than typical healthy ranges. Additionally, the ankle shows high jerk (0.53), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion range and high jerk.",Stroke
+Sub43_Control,Control,"Conclusion: Control  
+Explanation: The subject exhibits a wide range of motion in the hip (47.32°) and knee (61.62°), which is typical of healthy individuals. The jerk values for all joints are low (hip: 0.29, knee: 0.11, ankle: 0.05), indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints, further supporting a pattern of smooth and controlled motion. These findings align with the characteristics of a control (healthy) subject.",Control
+Sub43_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (28.36°) and ankle (10.01°), which are lower than typical healthy ranges. Additionally, the knee shows a high jerk value (0.52), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion range and high jerk.",Stroke
+Sub44_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in all joints, with the hip at 45.26°, knee at 58.39°, and ankle at 30.52°, which are indicative of healthy movement patterns. Additionally, the jerk values for all joints are low (hip: 0.88, knee: 0.25, ankle: 0.14), suggesting smooth motion. The acceleration standard deviations are also low, indicating consistent acceleration. These findings align with the characteristics of a control (healthy) subject.",Control
+Sub44_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the ankle (23.45°) and high jerk in the knee (0.47), which are indicative of stroke-related gait patterns. The combination of these factors across multiple joints suggests a pattern typical of stroke patients.",Stroke
+Sub45_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (47.98°) and knee (60.60°), which is typical of healthy individuals. The ankle range is slightly lower (23.00°) but not significantly reduced. The jerk values for all joints are low (0.15 for hip and knee, 0.00 for ankle), indicating smooth movement. The acceleration standard deviations are also within normal limits, suggesting consistent acceleration. Overall, the gait patterns align with those of a healthy individual.",Control
+Sub45_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (30.46°) and ankle (27.33°), which are lower than typical healthy ranges. Additionally, the hip shows a relatively high jerk value (0.35), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints demonstrate reduced motion range and increased jerk.",Stroke
+Sub46_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in all joints (hip, knee, and ankle), which is typical of healthy individuals. The jerk values are low, indicating smooth movement, and the acceleration standard deviations are consistent, suggesting stable and controlled motion. These characteristics align with the patterns expected in control subjects, with no signs of erratic motion or reduced joint range that would suggest stroke-related gait.",Control
+Sub46_Stroke,Stroke,"Conclusion: Stroke  
+Explanation: The subject exhibits reduced range of motion in the hip (23.54°) and ankle (8.23°), along with high jerk values in the knee (0.13) and ankle (0.34). These patterns are consistent with stroke-related gait, as multiple joints show high jerk and reduced motion range.",Stroke
+Sub47_Control,Control,"Conclusion: Control
+Explanation: The subject exhibits a wide range of motion in the hip (43.69°), knee (56.24°), and ankle (34.52°) joints, which is typical of healthy individuals. The jerk values for all joints are low (hip: 0.30, knee: 0.32, ankle: 0.26), indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.31, knee: 0.37, ankle: 0.29), further supporting the classification as a control subject.",Control
+Sub47_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits a reduced range of motion in the hip (33.02°) and ankle (18.03°), which are lower than typical healthy ranges. Additionally, the hip shows a relatively high jerk value (0.33), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show reduced motion range and higher jerk.",Stroke
+Sub48_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a wide range of motion in the hip (39.46°) and knee (57.88°), which is typical of healthy individuals. The jerk values for all joints (hip: 0.35, knee: 0.19, ankle: 0.05) are low, indicating smooth movement. Additionally, the acceleration standard deviations are consistent and low across all joints (hip: 0.36, knee: 0.26, ankle: 0.10), further supporting the classification as a control subject. There are no signs of reduced motion range or high jerk that would suggest stroke-related gait patterns.",Control
+Sub48_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the hip (38.76°) and ankle (17.71°), which are lower than typical healthy ranges. Additionally, both the hip and ankle show relatively high jerk values (0.25 and 0.24, respectively), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints show high jerk and reduced motion range.",Stroke
+Sub49_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a hip range of 45.06°, knee range of 57.25°, and ankle range of 27.53°, which are indicative of a healthy range of motion. The jerk values for the hip (0.18), knee (0.02), and ankle (0.19) are low, suggesting smooth movement. The acceleration standard deviations are also low, indicating consistent acceleration. These findings align with the patterns typical of healthy individuals, thus classifying the subject as Control.",Control
+Sub49_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits reduced range of motion in the ankle (28.29°) and high jerk values in both the hip (0.20) and ankle (0.22). These findings align with stroke-related gait patterns, which include reduced motion range and higher joint jerk. The combination of these factors across multiple joints suggests a classification of Stroke.",Stroke
+Sub50_Control,Control,"Conclusion: Control
+
+Explanation: The subject exhibits a hip range of 39.37°, knee range of 54.04°, and ankle range of 22.98°, which are within normal variability for healthy individuals. The jerk values for the hip (0.11), knee (0.22), and ankle (0.16) are low, indicating smooth motion. Additionally, the acceleration standard deviations are consistent and not indicative of erratic motion. These factors suggest that the subject's gait patterns align with those of a healthy individual.",Control
+Sub50_Stroke,Stroke,"Conclusion: Stroke
+
+Explanation: The subject exhibits a reduced range of motion in the hip (38.65°) and ankle (25.94°), which are lower than typical healthy ranges. Additionally, the hip shows a relatively high jerk value (0.29), indicating erratic motion. These findings align with stroke-related gait patterns, where multiple joints demonstrate reduced motion range and increased jerk.",Stroke

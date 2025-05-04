@@ -1,0 +1,2301 @@
+Subject,Subject Condition,LLM Prompt,LLM Output,LLM Decision,Confidence
+trial1_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 38.00 ms).
+
+Pose Summary:
+hip mean = 0.03; hip std = 23.37; hip range = 75.25; hip acc std = 1559.79; hip jerk = 20217.10; knee mean = -0.02; knee std = 33.38; knee range = 101.81; knee acc std = 2053.85; knee jerk = 22099.20; ankle mean = -0.02; ankle std = 36.74; ankle range = 112.73; ankle acc std = 2211.51; ankle jerk = 22270.71; step length mean = 16.69; stride length mean = 16.52; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 38.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial2_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 38.00 ms).
+
+Pose Summary:
+hip mean = 0.07; hip std = 24.62; hip range = 82.17; hip acc std = 1631.91; hip jerk = 21001.04; knee mean = 0.00; knee std = 35.15; knee range = 111.35; knee acc std = 2159.30; knee jerk = 22870.77; ankle mean = -0.01; ankle std = 38.64; ankle range = 118.26; ankle acc std = 2329.22; ankle jerk = 23100.37; step length mean = 17.53; stride length mean = 17.38; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with a very low Theta/Alpha and Theta/Beta ratio, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 38.00 ms, indicating adequate autonomic regulation and no signs of cognitive decline. The gait analysis reveals healthy joint movement ranges, smooth transitions, and consistent acceleration, with no significant abnormalities in jerk or acceleration variability. All modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial7_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 35.00 ms).
+
+Pose Summary:
+hip mean = 0.01; hip std = 25.97; hip range = 80.87; hip acc std = 1674.29; hip jerk = 20426.37; knee mean = 0.01; knee std = 37.01; knee range = 113.47; knee acc std = 2221.24; knee jerk = 22033.37; ankle mean = -0.03; ankle std = 40.70; ankle range = 122.26; ankle acc std = 2411.45; ankle jerk = 22719.39; step length mean = 18.48; stride length mean = 18.28; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 35.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial15_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 37.00 ms).
+
+Pose Summary:
+hip mean = 0.02; hip std = 24.55; hip range = 78.41; hip acc std = 1639.14; hip jerk = 21415.97; knee mean = 0.02; knee std = 35.09; knee range = 114.36; knee acc std = 2150.45; knee jerk = 22870.29; ankle mean = 0.04; ankle std = 38.61; ankle range = 119.40; ankle acc std = 2340.42; ankle jerk = 23886.52; step length mean = 17.55; stride length mean = 17.35; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 37.00 ms, indicating adequate autonomic regulation and no signs of cognitive decline. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial14_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 38.00 ms).
+
+Pose Summary:
+hip mean = 0.04; hip std = 22.94; hip range = 72.77; hip acc std = 1540.60; hip jerk = 20481.31; knee mean = -0.00; knee std = 32.80; knee range = 99.67; knee acc std = 2019.49; knee jerk = 21952.15; ankle mean = 0.05; ankle std = 36.08; ankle range = 112.19; ankle acc std = 2183.56; ankle jerk = 22298.02; step length mean = 16.38; stride length mean = 16.19; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 38.00 ms, indicating adequate autonomic regulation and no signs of cognitive decline. The gait analysis reveals healthy joint movement ranges, smooth transitions, and consistent acceleration, with no significant abnormalities in jerk or acceleration variability. All modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial11_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 39.00 ms).
+
+Pose Summary:
+hip mean = 0.01; hip std = 26.93; hip range = 87.92; hip acc std = 1716.57; hip jerk = 20290.90; knee mean = 0.04; knee std = 38.40; knee range = 116.01; knee acc std = 2305.08; knee jerk = 22919.95; ankle mean = 0.06; ankle std = 42.24; ankle range = 130.76; ankle acc std = 2507.60; ankle jerk = 23877.08; step length mean = 19.17; stride length mean = 18.96; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 39.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial6_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 39.00 ms).
+
+Pose Summary:
+hip mean = 0.00; hip std = 27.24; hip range = 88.06; hip acc std = 1756.34; hip jerk = 21279.69; knee mean = 0.03; knee std = 38.91; knee range = 118.63; knee acc std = 2328.50; knee jerk = 22947.03; ankle mean = -0.04; ankle std = 42.79; ankle range = 128.26; ankle acc std = 2538.51; ankle jerk = 23917.00; step length mean = 19.40; stride length mean = 19.18; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 39.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial13_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 36.00 ms).
+
+Pose Summary:
+hip mean = 0.01; hip std = 24.31; hip range = 81.34; hip acc std = 1605.17; hip jerk = 20345.70; knee mean = -0.00; knee std = 34.66; knee range = 107.84; knee acc std = 2114.72; knee jerk = 22223.82; ankle mean = 0.04; ankle std = 38.11; ankle range = 117.90; ankle acc std = 2304.92; ankle jerk = 23580.45; step length mean = 17.29; stride length mean = 17.07; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Needs clinical review
+
+Explanation: The EEG summary indicates normal Alpha and Theta power levels, with a very low Theta/Alpha and Theta/Beta ratio, suggesting no significant cognitive dysfunction based on EEG alone. The HRV is within normal limits (SDNN = 36.00 ms), indicating adequate autonomic regulation. However, the gait analysis shows some irregularities: high acceleration standard deviation and jerk values across the hip, knee, and ankle joints, which could suggest subtle motor irregularities. These gait characteristics, while not overtly indicative of MCI, warrant further investigation due to their potential association with mild motor irregularities. Given the normal EEG and HRV findings but the presence of gait anomalies, a clinical review is recommended to ensure a comprehensive assessment.",Needs clinical review,high
+trial9_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 39.00 ms).
+
+Pose Summary:
+hip mean = 0.00; hip std = 24.72; hip range = 77.08; hip acc std = 1619.90; hip jerk = 20404.88; knee mean = -0.01; knee std = 35.33; knee range = 107.39; knee acc std = 2139.98; knee jerk = 21816.62; ankle mean = 0.01; ankle std = 38.86; ankle range = 118.78; ankle acc std = 2331.49; ankle jerk = 23208.58; step length mean = 17.61; stride length mean = 17.41; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 39.00 ms, indicating adequate autonomic regulation and no signs of cognitive decline. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial8_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 36.00 ms).
+
+Pose Summary:
+hip mean = 0.02; hip std = 24.38; hip range = 76.90; hip acc std = 1603.06; hip jerk = 20244.20; knee mean = 0.01; knee std = 34.76; knee range = 108.04; knee acc std = 2115.39; knee jerk = 21944.23; ankle mean = 0.08; ankle std = 38.29; ankle range = 116.85; ankle acc std = 2302.78; ankle jerk = 22831.92; step length mean = 17.41; stride length mean = 17.20; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 36.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial3_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 36.00 ms).
+
+Pose Summary:
+hip mean = -0.02; hip std = 24.80; hip range = 81.11; hip acc std = 1631.24; hip jerk = 20742.69; knee mean = 0.02; knee std = 35.43; knee range = 111.32; knee acc std = 2157.68; knee jerk = 22538.96; ankle mean = 0.01; ankle std = 38.94; ankle range = 118.34; ankle acc std = 2345.70; ankle jerk = 23443.36; step length mean = 17.69; stride length mean = 17.46; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 36.00 ms, indicating adequate autonomic regulation and no signs of cognitive decline. The gait analysis reveals healthy joint movement ranges, smooth transitions, and consistent acceleration, with no significant abnormalities in jerk or acceleration variability. All modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial5_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 36.00 ms).
+
+Pose Summary:
+hip mean = -0.08; hip std = 23.03; hip range = 72.66; hip acc std = 1540.26; hip jerk = 20312.25; knee mean = 0.05; knee std = 32.85; knee range = 101.42; knee acc std = 2005.97; knee jerk = 21332.31; ankle mean = 0.02; ankle std = 36.14; ankle range = 111.88; ankle acc std = 2186.40; ankle jerk = 22370.36; step length mean = 16.47; stride length mean = 16.28; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 36.00 ms, indicating adequate autonomic regulation and no signs of cognitive decline. The gait analysis reveals healthy joint movement ranges, smooth transitions, and consistent acceleration, with no significant abnormalities in jerk or acceleration variability. All modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial12_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 34.00 ms).
+
+Pose Summary:
+hip mean = -0.05; hip std = 24.25; hip range = 84.05; hip acc std = 1644.03; hip jerk = 21628.11; knee mean = 0.00; knee std = 34.55; knee range = 107.97; knee acc std = 2127.65; knee jerk = 22673.27; ankle mean = 0.04; ankle std = 38.11; ankle range = 120.86; ankle acc std = 2324.27; ankle jerk = 24003.96; step length mean = 17.29; stride length mean = 17.08; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 34.00 ms, indicating adequate autonomic regulation and no signs of cognitive decline. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial4_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 35.00 ms).
+
+Pose Summary:
+hip mean = 0.03; hip std = 25.01; hip range = 82.21; hip acc std = 1656.01; hip jerk = 21195.68; knee mean = 0.04; knee std = 35.64; knee range = 109.46; knee acc std = 2163.30; knee jerk = 22347.83; ankle mean = 0.02; ankle std = 39.20; ankle range = 125.05; ankle acc std = 2362.25; ankle jerk = 23815.09; step length mean = 17.82; stride length mean = 17.62; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 35.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial10_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 35.00 ms).
+
+Pose Summary:
+hip mean = 0.04; hip std = 25.81; hip range = 83.42; hip acc std = 1689.19; hip jerk = 21190.69; knee mean = 0.03; knee std = 36.87; knee range = 114.04; knee acc std = 2236.65; knee jerk = 22959.73; ankle mean = -0.00; ankle std = 40.55; ankle range = 127.95; ankle acc std = 2440.43; ankle jerk = 24216.10; step length mean = 18.41; stride length mean = 18.22; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with a low Theta/Alpha and Theta/Beta ratio, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 35.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial22_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 31.00 ms).
+
+Pose Summary:
+hip mean = 0.02; hip std = 26.02; hip range = 83.16; hip acc std = 1694.50; hip jerk = 20980.43; knee mean = -0.02; knee std = 37.09; knee range = 114.37; knee acc std = 2253.08; knee jerk = 23222.39; ankle mean = -0.04; ankle std = 40.79; ankle range = 124.25; ankle acc std = 2441.97; ankle jerk = 23986.53; step length mean = 18.50; stride length mean = 18.29; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Needs clinical review
+
+Explanation: The EEG summary indicates normal Alpha and Theta power levels, with a very low Theta/Alpha and Theta/Beta ratio, suggesting no significant cognitive dysfunction based on EEG alone. The HRV is slightly above the threshold for concern (SDNN = 31.00 ms), indicating normal autonomic regulation. However, the gait analysis shows some irregularities: high acceleration standard deviation and jerk values across the hip, knee, and ankle joints, which may suggest subtle motor irregularities. These gait findings, while not overtly indicative of MCI, warrant further investigation due to their potential link to cognitive decline. Given the normal EEG and HRV but abnormal gait markers, a clinical review is recommended to ensure a comprehensive assessment.",Needs clinical review,high
+trial25_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 32.00 ms).
+
+Pose Summary:
+hip mean = -0.01; hip std = 24.25; hip range = 77.14; hip acc std = 1594.34; hip jerk = 20179.18; knee mean = 0.02; knee std = 34.62; knee range = 105.48; knee acc std = 2104.09; knee jerk = 22032.49; ankle mean = 0.04; ankle std = 38.15; ankle range = 116.42; ankle acc std = 2289.09; ankle jerk = 22732.60; step length mean = 17.33; stride length mean = 17.12; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with a very low Theta/Alpha and Theta/Beta ratio, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 32.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial18_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 32.00 ms).
+
+Pose Summary:
+hip mean = 0.00; hip std = 23.39; hip range = 76.29; hip acc std = 1573.36; hip jerk = 20740.24; knee mean = 0.03; knee std = 33.38; knee range = 102.91; knee acc std = 2058.50; knee jerk = 22221.45; ankle mean = -0.01; ankle std = 36.74; ankle range = 114.17; ankle acc std = 2227.93; ankle jerk = 23162.69; step length mean = 16.70; stride length mean = 16.53; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Needs clinical review
+
+Explanation: The EEG summary indicates normal Alpha and Theta power levels, with a very low Theta/Alpha and Theta/Beta ratio, suggesting no significant cognitive dysfunction typically associated with MCI. The HRV is slightly above the threshold for concern (SDNN = 32.00 ms), indicating normal autonomic regulation. However, the gait analysis shows some irregularities, such as high acceleration standard deviation and jerk values across the hip, knee, and ankle joints, which could suggest subtle motor irregularities. These gait findings, while not overtly indicative of MCI, warrant further investigation due to their potential link to cognitive decline. Given the normal EEG and HRV but abnormal gait patterns, a clinical review is recommended to ensure a comprehensive assessment.",Needs clinical review,high
+trial16_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 34.00 ms).
+
+Pose Summary:
+hip mean = 0.04; hip std = 22.89; hip range = 74.12; hip acc std = 1556.29; hip jerk = 20851.85; knee mean = 0.01; knee std = 32.69; knee range = 101.42; knee acc std = 2020.34; knee jerk = 22299.56; ankle mean = 0.01; ankle std = 35.96; ankle range = 111.10; ankle acc std = 2197.76; ankle jerk = 23145.82; step length mean = 16.32; stride length mean = 16.13; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Needs clinical review
+
+Explanation: The EEG summary indicates normal Alpha and Theta power levels, with a very low Theta/Alpha and Theta/Beta ratio, suggesting no significant cognitive dysfunction based on EEG alone. The HRV is within normal limits (SDNN = 34.00 ms), indicating adequate autonomic regulation. However, the gait analysis shows some irregularities: high acceleration standard deviation and jerk values across the hip, knee, and ankle joints, which may suggest subtle motor irregularities. These gait characteristics could be indicative of early motor changes associated with MCI, despite the normal EEG and HRV findings. Given the potential for early motor irregularities, a clinical review is recommended to further assess the subject's condition.",Needs clinical review,high
+trial24_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 33.00 ms).
+
+Pose Summary:
+hip mean = 0.05; hip std = 24.39; hip range = 80.91; hip acc std = 1621.53; hip jerk = 20772.83; knee mean = 0.00; knee std = 34.83; knee range = 110.75; knee acc std = 2141.48; knee jerk = 22981.72; ankle mean = 0.06; ankle std = 38.31; ankle range = 121.65; ankle acc std = 2317.10; ankle jerk = 23437.35; step length mean = 17.42; stride length mean = 17.27; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 33.00 ms, indicating adequate autonomic regulation and no signs of cognitive decline. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial23_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 31.00 ms).
+
+Pose Summary:
+hip mean = -0.04; hip std = 25.44; hip range = 79.43; hip acc std = 1645.33; hip jerk = 20130.52; knee mean = 0.05; knee std = 36.35; knee range = 110.62; knee acc std = 2197.64; knee jerk = 22587.49; ankle mean = 0.06; ankle std = 39.99; ankle range = 121.74; ankle acc std = 2384.60; ankle jerk = 23217.21; step length mean = 18.17; stride length mean = 17.94; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with a low Theta/Alpha and Theta/Beta ratio, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 31.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial20_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 34.00 ms).
+
+Pose Summary:
+hip mean = 0.00; hip std = 25.54; hip range = 83.27; hip acc std = 1661.78; hip jerk = 20343.08; knee mean = -0.00; knee std = 36.45; knee range = 115.33; knee acc std = 2224.10; knee jerk = 23257.46; ankle mean = 0.04; ankle std = 40.07; ankle range = 123.83; ankle acc std = 2398.48; ankle jerk = 23611.91; step length mean = 18.19; stride length mean = 17.99; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 34.00 ms, indicating adequate autonomic regulation and no signs of cognitive decline. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial21_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 33.00 ms).
+
+Pose Summary:
+hip mean = 0.01; hip std = 24.95; hip range = 83.81; hip acc std = 1649.48; hip jerk = 20896.41; knee mean = 0.05; knee std = 35.59; knee range = 113.78; knee acc std = 2174.90; knee jerk = 23107.19; ankle mean = -0.00; ankle std = 39.13; ankle range = 118.34; ankle acc std = 2351.65; ankle jerk = 23170.08; step length mean = 17.75; stride length mean = 17.55; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 33.00 ms, indicating adequate autonomic regulation and no signs of cognitive decline. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial17_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 31.00 ms).
+
+Pose Summary:
+hip mean = -0.00; hip std = 25.08; hip range = 79.96; hip acc std = 1647.36; hip jerk = 20635.64; knee mean = -0.05; knee std = 35.78; knee range = 110.88; knee acc std = 2166.60; knee jerk = 22223.08; ankle mean = -0.00; ankle std = 39.41; ankle range = 123.07; ankle acc std = 2371.08; ankle jerk = 23762.59; step length mean = 17.88; stride length mean = 17.67; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with a very low Theta/Alpha and Theta/Beta ratio, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 31.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial19_Healthy,Healthy,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+HRV Summary:
+HRV appears normal (SDNN = 38.00 ms).
+
+Pose Summary:
+hip mean = 0.02; hip std = 23.96; hip range = 82.58; hip acc std = 1607.08; hip jerk = 21055.03; knee mean = 0.04; knee std = 34.17; knee range = 104.91; knee acc std = 2111.23; knee jerk = 22939.66; ankle mean = -0.00; ankle std = 37.61; ankle range = 119.15; ankle acc std = 2285.63; ankle jerk = 23598.24; step length mean = 17.09; stride length mean = 16.89; cadence = 72.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: Control
+
+Explanation: The EEG summary indicates that both Alpha and Theta power levels are within normal ranges, with very low Theta/Alpha and Theta/Beta ratios, suggesting no significant cognitive dysfunction. The HRV summary shows a normal SDNN value of 38.00 ms, indicating adequate autonomic regulation. The gait analysis reveals healthy joint movement ranges and smooth transitions, with no significant abnormalities in acceleration or jerk that would suggest motor irregularities associated with MCI. Overall, all modalities are within normal patterns, supporting a classification of Control.",Healthy,high
+trial17_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.14
+Theta/Beta ratio: 0.71
+
+HRV Summary:
+HRV suppression detected (SDNN = 13.93 ms).
+
+Pose Summary:
+hip mean = -0.01; hip std = 12.42; hip range = 54.71; hip acc std = 1692.12; hip jerk = 36470.14; knee mean = -0.01; knee std = 21.27; knee range = 78.16; knee acc std = 1763.11; knee jerk = 36472.07; ankle mean = -0.09; ankle std = 24.37; ankle range = 86.69; ankle acc std = 1777.30; ankle jerk = 36861.59; step length mean = 8.44; stride length mean = 7.80; cadence = 50.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a global reduction in Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio suggests cognitive dysfunction. The HRV summary shows significant suppression (SDNN = 13.93 ms), indicating decreased autonomic regulation and potential cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across all three modalities support a classification of MCI.",MCI,high
+trial16_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.06
+Theta/Beta ratio: 0.72
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.12 ms).
+
+Pose Summary:
+hip mean = -0.03; hip std = 14.03; hip range = 56.73; hip acc std = 1705.08; hip jerk = 36539.15; knee mean = -0.05; knee std = 24.34; knee range = 86.03; knee acc std = 1794.95; knee jerk = 37083.16; ankle mean = -0.02; ankle std = 27.64; ankle range = 98.06; ankle acc std = 1822.94; ankle jerk = 36996.43; step length mean = 9.31; stride length mean = 8.81; cadence = 51.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary shows a globally reduced Alpha power, which is a marker associated with MCI, although Theta levels are normal. The Theta/Alpha ratio is elevated, which can indicate cognitive dysfunction. The HRV summary indicates significant suppression (SDNN = 12.12 ms), suggesting decreased autonomic regulation and potential cognitive decline. The gait analysis reveals high jerk values and acceleration variability across joints, which are indicative of subtle motor irregularities often seen in MCI. The combination of these EEG, HRV, and gait findings supports a classification of MCI.",MCI,high
+trial21_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.22
+Theta/Beta ratio: 0.73
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.21 ms).
+
+Pose Summary:
+hip mean = 0.05; hip std = 13.96; hip range = 57.95; hip acc std = 1784.17; hip jerk = 38137.70; knee mean = -0.07; knee std = 23.93; knee range = 85.16; knee acc std = 1781.39; knee jerk = 36871.09; ankle mean = -0.04; ankle std = 27.32; ankle range = 93.77; ankle acc std = 1799.25; ankle jerk = 36833.54; step length mean = 9.23; stride length mean = 8.61; cadence = 51.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI, although Theta levels are normal. The Theta/Alpha ratio is elevated at 3.22, suggesting a shift towards more Theta activity relative to Alpha, which aligns with MCI patterns. The HRV summary shows significant suppression with an SDNN of 12.21 ms, indicating decreased autonomic regulation and potential cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial19_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.27
+Theta/Beta ratio: 0.75
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.05 ms).
+
+Pose Summary:
+hip mean = -0.05; hip std = 13.85; hip range = 55.24; hip acc std = 1696.40; hip jerk = 36291.10; knee mean = -0.07; knee std = 23.94; knee range = 82.70; knee acc std = 1802.72; knee jerk = 36991.74; ankle mean = -0.02; ankle std = 27.31; ankle range = 92.04; ankle acc std = 1832.60; ankle jerk = 37073.44; step length mean = 9.22; stride length mean = 8.62; cadence = 50.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker associated with MCI, although Theta levels are normal. The Theta/Alpha ratio is elevated, which can suggest cognitive dysfunction. The HRV summary shows significant suppression (SDNN = 12.05 ms), indicating decreased autonomic regulation and potential cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are consistent with MCI-related motor irregularities. These findings collectively support a classification of MCI.",MCI,high
+trial18_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.17
+Theta/Beta ratio: 0.75
+
+HRV Summary:
+HRV suppression detected (SDNN = 11.75 ms).
+
+Pose Summary:
+hip mean = -0.09; hip std = 14.95; hip range = 58.55; hip acc std = 1724.25; hip jerk = 37058.26; knee mean = 0.00; knee std = 25.85; knee range = 87.11; knee acc std = 1806.45; knee jerk = 37149.93; ankle mean = -0.01; ankle std = 29.39; ankle range = 96.93; ankle acc std = 1808.36; ankle jerk = 36114.34; step length mean = 9.75; stride length mean = 9.17; cadence = 50.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary shows globally reduced Alpha power, which is a marker associated with MCI, although Theta levels are normal. The Theta/Alpha ratio is elevated at 3.17, which suggests a shift towards more Theta activity relative to Alpha, a pattern often seen in MCI. The HRV summary indicates significant suppression with an SDNN of 11.75 ms, which is well below the threshold of 30 ms, suggesting decreased autonomic regulation and potential cognitive decline. The gait analysis reveals high acceleration variability and jerk across joints, indicating subtle motor irregularities consistent with MCI-related changes. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial15_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.04
+Theta/Beta ratio: 0.70
+
+HRV Summary:
+HRV suppression detected (SDNN = 11.60 ms).
+
+Pose Summary:
+hip mean = -0.08; hip std = 13.99; hip range = 55.91; hip acc std = 1684.55; hip jerk = 36161.53; knee mean = -0.03; knee std = 23.93; knee range = 82.35; knee acc std = 1731.97; knee jerk = 35490.33; ankle mean = 0.11; ankle std = 27.34; ankle range = 93.20; ankle acc std = 1799.41; ankle jerk = 36443.18; step length mean = 9.17; stride length mean = 8.63; cadence = 53.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary shows a globally reduced Alpha power, which is a marker associated with MCI, although Theta levels are normal. The Theta/Alpha ratio is elevated at 3.04, which can indicate cognitive dysfunction. The HRV summary shows significant suppression with an SDNN of 11.60 ms, indicating decreased autonomic regulation and potential cognitive decline. The gait analysis reveals high acceleration variability and jerk across joints, which are indicative of subtle motor irregularities associated with MCI. The combination of these EEG, HRV, and gait findings supports a classification of MCI.",MCI,high
+trial20_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.15
+Theta/Beta ratio: 0.75
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.73 ms).
+
+Pose Summary:
+hip mean = -0.02; hip std = 14.61; hip range = 59.43; hip acc std = 1738.41; hip jerk = 37459.52; knee mean = -0.04; knee std = 25.19; knee range = 86.98; knee acc std = 1852.29; knee jerk = 37991.56; ankle mean = 0.13; ankle std = 28.71; ankle range = 96.83; ankle acc std = 1844.68; ankle jerk = 37397.42; step length mean = 9.55; stride length mean = 9.04; cadence = 51.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary shows a globally reduced Alpha power, which is a marker associated with MCI, although Theta levels are normal. The Theta/Alpha ratio is elevated at 3.15, which suggests a shift towards Theta dominance, a pattern often seen in MCI. The HRV summary indicates significant suppression (SDNN = 12.73 ms), which is well below the threshold of 30 ms, suggesting decreased autonomic regulation and potential cognitive decline. The gait analysis reveals high jerk values and acceleration variability across joints, indicating subtle motor irregularities consistent with MCI-related gait changes. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial22_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.06
+Theta/Beta ratio: 0.71
+
+HRV Summary:
+HRV suppression detected (SDNN = 11.96 ms).
+
+Pose Summary:
+hip mean = -0.10; hip std = 13.98; hip range = 55.28; hip acc std = 1704.67; hip jerk = 36370.29; knee mean = 0.07; knee std = 23.90; knee range = 84.31; knee acc std = 1749.40; knee jerk = 35700.56; ankle mean = -0.03; ankle std = 27.37; ankle range = 94.86; ankle acc std = 1789.21; ankle jerk = 35961.97; step length mean = 9.20; stride length mean = 8.65; cadence = 50.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio (3.06) suggests a shift towards patterns seen in cognitive impairment. The HRV summary shows significant suppression (SDNN = 11.96 ms), indicating decreased autonomic regulation, which is linked to cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial14_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.07
+Theta/Beta ratio: 0.71
+
+HRV Summary:
+HRV suppression detected (SDNN = 13.61 ms).
+
+Pose Summary:
+hip mean = -0.03; hip std = 13.69; hip range = 57.85; hip acc std = 1724.67; hip jerk = 36931.83; knee mean = -0.08; knee std = 23.52; knee range = 83.22; knee acc std = 1802.07; knee jerk = 37180.34; ankle mean = 0.07; ankle std = 26.86; ankle range = 93.31; ankle acc std = 1814.21; ankle jerk = 36580.75; step length mean = 9.02; stride length mean = 8.50; cadence = 51.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio (3.07) suggests a shift towards patterns seen in cognitive impairment. The HRV summary shows significant suppression (SDNN = 13.61 ms), indicating decreased autonomic regulation, which is linked to cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial6_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.14
+Theta/Beta ratio: 0.72
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.58 ms).
+
+Pose Summary:
+hip mean = -0.10; hip std = 14.63; hip range = 58.98; hip acc std = 1707.92; hip jerk = 36206.02; knee mean = 0.02; knee std = 25.34; knee range = 89.47; knee acc std = 1761.13; knee jerk = 35837.35; ankle mean = -0.00; ankle std = 28.92; ankle range = 102.43; ankle acc std = 1787.58; ankle jerk = 35652.80; step length mean = 9.55; stride length mean = 9.01; cadence = 50.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary shows globally reduced Alpha power, which is a marker associated with MCI, although Theta levels are normal. The HRV summary indicates significant suppression (SDNN = 12.58 ms), suggesting decreased autonomic regulation and cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are indicative of subtle motor irregularities often seen in MCI. The combination of these findings across EEG, HRV, and gait modalities supports a classification of MCI.",MCI,high
+trial13_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 2.98
+Theta/Beta ratio: 0.72
+
+HRV Summary:
+HRV suppression detected (SDNN = 11.90 ms).
+
+Pose Summary:
+hip mean = 0.04; hip std = 13.82; hip range = 53.32; hip acc std = 1661.08; hip jerk = 35294.83; knee mean = 0.02; knee std = 23.97; knee range = 85.41; knee acc std = 1781.18; knee jerk = 36757.97; ankle mean = -0.01; ankle std = 27.34; ankle range = 95.24; ankle acc std = 1796.45; ankle jerk = 36550.72; step length mean = 9.11; stride length mean = 8.61; cadence = 49.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI, although Theta levels are normal. The Theta/Alpha ratio is elevated at 2.98, suggesting a shift towards more Theta activity relative to Alpha, which aligns with MCI patterns. The HRV summary shows significant suppression with an SDNN of 11.90 ms, indicating decreased autonomic regulation and potential cognitive decline. The gait analysis reveals increased variability and jerk in joint movements, particularly in the hips, knees, and ankles, which are indicative of subtle motor irregularities often seen in MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial7_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.14
+Theta/Beta ratio: 0.73
+
+HRV Summary:
+HRV suppression detected (SDNN = 11.64 ms).
+
+Pose Summary:
+hip mean = -0.09; hip std = 15.17; hip range = 57.82; hip acc std = 1705.93; hip jerk = 36481.59; knee mean = 0.07; knee std = 26.29; knee range = 90.72; knee acc std = 1803.79; knee jerk = 36903.14; ankle mean = -0.00; ankle std = 29.77; ankle range = 98.69; ankle acc std = 1844.60; ankle jerk = 36809.25; step length mean = 9.86; stride length mean = 9.36; cadence = 52.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI, although Theta levels are normal. The HRV summary shows significant suppression (SDNN = 11.64 ms), which is well below the threshold of 30 ms, indicating decreased autonomic regulation and potential cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are indicative of subtle motor irregularities often seen in MCI. The combination of these findings across EEG, HRV, and gait modalities supports a classification of MCI.",MCI,high
+trial5_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.15
+Theta/Beta ratio: 0.70
+
+HRV Summary:
+HRV suppression detected (SDNN = 11.67 ms).
+
+Pose Summary:
+hip mean = 0.04; hip std = 15.16; hip range = 59.33; hip acc std = 1714.61; hip jerk = 36811.95; knee mean = -0.08; knee std = 26.07; knee range = 88.70; knee acc std = 1825.64; knee jerk = 37544.26; ankle mean = 0.04; ankle std = 29.89; ankle range = 99.33; ankle acc std = 1839.70; ankle jerk = 36898.42; step length mean = 9.86; stride length mean = 9.38; cadence = 49.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI, although Theta levels are normal. The Theta/Alpha ratio is elevated at 3.15, which suggests a shift towards more Theta activity relative to Alpha, a pattern often seen in MCI. The HRV summary shows significant suppression with an SDNN of 11.67 ms, indicating decreased autonomic regulation and potential cognitive decline. The gait analysis reveals high jerk values and acceleration variability across joints, which are indicative of subtle motor irregularities associated with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial4_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.02
+Theta/Beta ratio: 0.72
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.09 ms).
+
+Pose Summary:
+hip mean = 0.01; hip std = 14.39; hip range = 59.08; hip acc std = 1702.87; hip jerk = 36373.95; knee mean = 0.03; knee std = 24.69; knee range = 87.26; knee acc std = 1824.66; knee jerk = 37448.36; ankle mean = 0.04; ankle std = 28.12; ankle range = 94.12; ankle acc std = 1815.93; ankle jerk = 36710.76; step length mean = 9.39; stride length mean = 8.90; cadence = 51.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary shows globally reduced Alpha power, which is a marker associated with MCI, although Theta levels are normal. The HRV summary indicates significant suppression (SDNN = 12.09 ms), suggesting decreased autonomic regulation and cognitive decline. The gait analysis reveals high acceleration variability and jerk across joints, which are indicative of subtle motor irregularities often seen in MCI. The combination of these findings across EEG, HRV, and gait modalities supports a classification of MCI.",MCI,high
+trial10_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.23
+Theta/Beta ratio: 0.72
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.35 ms).
+
+Pose Summary:
+hip mean = 0.08; hip std = 14.07; hip range = 58.40; hip acc std = 1687.88; hip jerk = 36463.62; knee mean = 0.07; knee std = 24.10; knee range = 84.49; knee acc std = 1811.27; knee jerk = 37583.39; ankle mean = 0.03; ankle std = 27.56; ankle range = 94.92; ankle acc std = 1837.08; ankle jerk = 37428.09; step length mean = 9.30; stride length mean = 8.71; cadence = 50.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio (3.23) suggests a shift towards patterns seen in cognitive impairment. The HRV summary shows significant suppression (SDNN = 12.35 ms), indicating decreased autonomic regulation, which is linked to cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial11_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.01
+Theta/Beta ratio: 0.71
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.46 ms).
+
+Pose Summary:
+hip mean = 0.00; hip std = 14.83; hip range = 56.73; hip acc std = 1734.63; hip jerk = 37288.38; knee mean = 0.02; knee std = 25.72; knee range = 89.78; knee acc std = 1734.15; knee jerk = 35044.27; ankle mean = 0.01; ankle std = 29.32; ankle range = 99.84; ankle acc std = 1826.55; ankle jerk = 36573.35; step length mean = 9.71; stride length mean = 9.21; cadence = 53.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the Theta/Alpha ratio is elevated at 3.01, suggesting a shift towards slower brain wave activity, which is indicative of cognitive dysfunction. The HRV summary shows significant suppression with an SDNN of 12.46 ms, indicating decreased autonomic regulation and potential cognitive decline. The pose summary reveals gait irregularities, such as high jerk values and acceleration variability across joints, which are consistent with MCI-related motor changes. These findings collectively support a classification of MCI.",MCI,high
+trial12_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.10
+Theta/Beta ratio: 0.71
+
+HRV Summary:
+HRV suppression detected (SDNN = 11.65 ms).
+
+Pose Summary:
+hip mean = -0.03; hip std = 14.38; hip range = 58.16; hip acc std = 1734.80; hip jerk = 37210.03; knee mean = 0.02; knee std = 24.75; knee range = 84.07; knee acc std = 1821.25; knee jerk = 37627.36; ankle mean = -0.03; ankle std = 28.21; ankle range = 94.79; ankle acc std = 1852.57; ankle jerk = 37633.32; step length mean = 9.47; stride length mean = 8.94; cadence = 51.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the Theta/Alpha ratio is elevated at 3.10, suggesting a potential cognitive dysfunction. The HRV summary shows significant suppression with an SDNN of 11.65 ms, indicating decreased autonomic regulation and cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial9_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.15
+Theta/Beta ratio: 0.73
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.54 ms).
+
+Pose Summary:
+hip mean = -0.02; hip std = 15.22; hip range = 61.98; hip acc std = 1729.21; hip jerk = 36818.68; knee mean = -0.02; knee std = 26.33; knee range = 94.04; knee acc std = 1794.54; knee jerk = 36652.52; ankle mean = -0.04; ankle std = 29.89; ankle range = 100.43; ankle acc std = 1854.42; ankle jerk = 37726.33; step length mean = 9.86; stride length mean = 9.41; cadence = 50.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a global reduction in Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio (3.15) suggests a shift towards patterns seen in cognitive impairment. The HRV summary shows significant suppression (SDNN = 12.54 ms), indicating decreased autonomic regulation, which is linked to cognitive decline. The gait analysis reveals increased variability and jerk in joint movements, particularly in the hip, knee, and ankle, which are consistent with subtle motor irregularities associated with MCI. These findings across all three modalities support a classification of MCI.",MCI,high
+trial8_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.01
+Theta/Beta ratio: 0.70
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.25 ms).
+
+Pose Summary:
+hip mean = -0.07; hip std = 14.34; hip range = 54.14; hip acc std = 1744.44; hip jerk = 37435.66; knee mean = -0.01; knee std = 24.76; knee range = 84.85; knee acc std = 1844.95; knee jerk = 38263.92; ankle mean = 0.04; ankle std = 28.25; ankle range = 96.76; ankle acc std = 1834.28; ankle jerk = 37042.46; step length mean = 9.45; stride length mean = 8.89; cadence = 50.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI, although Theta levels are normal. The Theta/Alpha ratio is elevated at 3.01, which suggests a shift towards more Theta activity relative to Alpha, aligning with MCI patterns. The HRV summary shows significant suppression (SDNN = 12.25 ms), indicating decreased autonomic regulation, which is linked to cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial1_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.18
+Theta/Beta ratio: 0.73
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.52 ms).
+
+Pose Summary:
+hip mean = 0.04; hip std = 14.71; hip range = 57.34; hip acc std = 1785.03; hip jerk = 38281.68; knee mean = -0.05; knee std = 25.26; knee range = 86.60; knee acc std = 1798.31; knee jerk = 36898.21; ankle mean = -0.04; ankle std = 28.83; ankle range = 96.78; ankle acc std = 1856.83; ankle jerk = 37730.62; step length mean = 9.57; stride length mean = 9.13; cadence = 49.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio (3.18) suggests a shift towards patterns seen in cognitive impairment. The HRV summary shows significant suppression (SDNN = 12.52 ms), indicating decreased autonomic regulation, which is linked to cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial25_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.12
+Theta/Beta ratio: 0.70
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.62 ms).
+
+Pose Summary:
+hip mean = 0.09; hip std = 14.86; hip range = 58.91; hip acc std = 1684.88; hip jerk = 35431.33; knee mean = 0.05; knee std = 25.58; knee range = 90.96; knee acc std = 1828.82; knee jerk = 37822.49; ankle mean = 0.03; ankle std = 29.09; ankle range = 101.93; ankle acc std = 1846.83; ankle jerk = 36681.54; step length mean = 9.70; stride length mean = 9.12; cadence = 50.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI, although Theta levels are normal. The Theta/Alpha ratio is elevated at 3.12, suggesting a shift towards more Theta activity relative to Alpha, which aligns with MCI patterns. The HRV summary shows significant suppression with an SDNN of 12.62 ms, indicating decreased autonomic regulation and potential cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial3_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.07
+Theta/Beta ratio: 0.71
+
+HRV Summary:
+HRV suppression detected (SDNN = 11.80 ms).
+
+Pose Summary:
+hip mean = -0.01; hip std = 13.91; hip range = 55.93; hip acc std = 1756.70; hip jerk = 37563.40; knee mean = 0.04; knee std = 23.79; knee range = 83.06; knee acc std = 1754.67; knee jerk = 36267.32; ankle mean = 0.07; ankle std = 27.19; ankle range = 93.99; ankle acc std = 1822.23; ankle jerk = 37046.25; step length mean = 9.22; stride length mean = 8.64; cadence = 51.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the Theta/Alpha ratio is elevated at 3.07, suggesting a potential cognitive dysfunction. The HRV summary shows significant suppression with an SDNN of 11.80 ms, indicating decreased autonomic regulation and cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial23_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.16
+Theta/Beta ratio: 0.72
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.16 ms).
+
+Pose Summary:
+hip mean = -0.05; hip std = 14.78; hip range = 56.26; hip acc std = 1729.70; hip jerk = 36874.12; knee mean = -0.07; knee std = 25.46; knee range = 87.91; knee acc std = 1789.17; knee jerk = 36656.27; ankle mean = -0.07; ankle std = 29.17; ankle range = 99.95; ankle acc std = 1807.07; ankle jerk = 36438.32; step length mean = 9.67; stride length mean = 9.15; cadence = 49.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio (3.16) suggests a shift towards patterns seen in cognitive impairment. The HRV summary shows significant suppression (SDNN = 12.16 ms), indicating decreased autonomic regulation, which is linked to cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high
+trial2_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.00
+Theta/Beta ratio: 0.72
+
+HRV Summary:
+HRV suppression detected (SDNN = 11.94 ms).
+
+Pose Summary:
+hip mean = 0.09; hip std = 14.21; hip range = 56.19; hip acc std = 1708.54; hip jerk = 36914.58; knee mean = -0.01; knee std = 24.58; knee range = 87.50; knee acc std = 1777.98; knee jerk = 36086.89; ankle mean = 0.01; ankle std = 27.93; ankle range = 97.55; ankle acc std = 1866.07; ankle jerk = 37979.94; step length mean = 9.35; stride length mean = 8.72; cadence = 52.00
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary shows globally reduced Alpha power, which is a marker associated with MCI, although Theta levels are normal. The HRV summary indicates significant suppression (SDNN = 11.94 ms), suggesting decreased autonomic regulation and cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are indicative of subtle motor irregularities associated with MCI. The combination of these findings across EEG, HRV, and gait modalities supports a classification of MCI.",MCI,high
+trial24_MCI,MCI,"
+Multimodal Ontology Reference:
+Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+- EEG markers:
+  - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+  - Suppressed Beta activity may indicate cognitive slowing.
+
+- HRV markers:
+  - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+- Gait (pose-derived) markers:
+  - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+  - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+Diagnostic Guidance:
+- Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+- Classify as **Control** if all modalities are within normal patterns.
+- Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+Use all three modalities in combination to support a holistic evaluation.
+
+
+Multimodal Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.14
+Theta/Beta ratio: 0.72
+
+HRV Summary:
+HRV suppression detected (SDNN = 12.45 ms).
+
+Pose Summary:
+hip mean = 0.02; hip std = 15.01; hip range = 58.79; hip acc std = 1693.11; hip jerk = 36214.14; knee mean = -0.00; knee std = 25.95; knee range = 91.36; knee acc std = 1775.22; knee jerk = 36480.27; ankle mean = 0.06; ankle std = 29.59; ankle range = 102.82; ankle acc std = 1860.68; ankle jerk = 37228.32; step length mean = 9.71; stride length mean = 9.33; cadence = 50.50
+
+
+Task:
+Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+Respond using the following format:
+Conclusion: [MCI / Control / Needs clinical review]
+Explanation: [Concise reasoning using any or all modalities]
+","Conclusion: MCI
+
+Explanation: The EEG summary indicates a global reduction in Alpha power, which is a marker commonly associated with MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio suggests cognitive dysfunction. The HRV summary shows significant suppression (SDNN = 12.45 ms), indicating decreased autonomic regulation and potential cognitive decline. The gait analysis reveals higher jerk and acceleration variability across joints, which are subtle motor irregularities consistent with MCI. These findings across EEG, HRV, and gait modalities collectively support a classification of MCI.",MCI,high

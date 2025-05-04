@@ -23,8 +23,6 @@ client = OpenAI(
     api_key=os.environ.get("OPENAI_API_KEY"),
 )
 
-yolo_model = YOLO("yolo11n-pose.pt")
-
 # Global variables
 eeg_data = {ch: [] for ch in ["AF3", "AF4", "F3", "F4", "F7", "F8", "T7", "T8", "P7", "P8", "O1", "O2", "C3", "C4"]}
 hrv_data = []
@@ -301,26 +299,26 @@ def create_dash_app(eeg_file_path, hrv_file_path):
         # Adding the Query Box for LLM integration
         html.Div([
             html.P(
-                "Ask a question about the EEG, HRV or Pose data:",
+                "Click below to analyze EEG, HRV, and Pose data and receive an AI-generated diagnosis:",
                 style={"fontSize": "14px", "color": "#000", "marginBottom": "5px", "display": "block",
                        "font-family": "Arial", "font-weight": "bold", "margin-bottom": "10px"}
             ),
-            dcc.Dropdown(
-                id="query-input",
-                options=dropdown_options,
-                placeholder="Select a question and click the submit button and NeuroSyncAI will answer!",
-                style={
-                    "borderRadius": "5px",
-                    "border": "1px solid #ccc",
-                    "fontSize": "14px",
-                    "marginRight": "10px",
-                    "float": "left",
-                    'width': '700px',
-                    "font-family": "Arial",
-                }
-            ),
+            # dcc.Dropdown(
+            #     id="query-input",
+            #     options=dropdown_options,
+            #     placeholder="Select a question and click the submit button and NeuroSyncAI will answer!",
+            #     style={
+            #         "borderRadius": "5px",
+            #         "border": "1px solid #ccc",
+            #         "fontSize": "14px",
+            #         "marginRight": "10px",
+            #         "float": "left",
+            #         'width': '700px',
+            #         "font-family": "Arial",
+            #     }
+            # ),
             html.Button(
-                'Submit Query',
+                'NeuroSyncAI Diagnosis Help',
                 id='submit-query-button',
                 n_clicks=0,
                 style={
@@ -842,235 +840,311 @@ def create_dash_app(eeg_file_path, hrv_file_path):
     MOTION_LOW_STD = 20  # Still posture
     MOTION_HIGH_STD = 100  # High movement
 
-    ### EEG, HRV, and POSE ANOMALY DETECTION ###
-    def detect_eeg_anomalies(eeg_df):
-        """
-        Identifies sudden peaks, dips, or variability in EEG signals.
-        Returns a structured list of detected anomalies with timestamps.
-        """
-        anomalies = []
+    def eeg_band_anomaly_detector(eeg_df, sampling_rate=256, window_sec=2, alpha_thresh=0.2, beta_thresh=0.15, z_thresh=-2.0):
+        from scipy.signal import welch
+        from scipy.stats import zscore
+        import numpy as np
 
         if 'Timestamp' not in eeg_df.columns:
             raise ValueError("Expected 'Timestamp' column in EEG data.")
 
-        numeric_columns = eeg_df.select_dtypes(include=['number']).columns.difference(['Timestamp'])
+        eeg_channels = eeg_df.select_dtypes(include=['number']).columns.difference(['Timestamp'])
+        window_size = int(sampling_rate * window_sec)
+        total_samples = len(eeg_df)
+        num_windows = total_samples // window_size
 
-        for channel in numeric_columns:
-            mean_val = eeg_df[channel].mean()
-            std_val = eeg_df[channel].std()
-            threshold_high = mean_val + 3 * std_val  # Upper threshold (outliers)
-            threshold_low = mean_val - 3 * std_val  # Lower threshold (outliers)
+        band_powers = {ch: {'theta': [], 'alpha': [], 'beta': []} for ch in eeg_channels}
+        window_times = []
 
-            for idx, value in eeg_df[channel].items():
-                timestamp = eeg_df.loc[idx, 'Timestamp']
-                if value > threshold_high:
-                    anomalies.append((f"EEG {channel} - Peak Detected", timestamp, timestamp))
-                elif value < threshold_low:
-                    anomalies.append((f"EEG {channel} - Dip Detected", timestamp, timestamp))
+        for w in range(num_windows):
+            start = w * window_size
+            end = start + window_size
+            seg = eeg_df.iloc[start:end]
+            if len(seg) < window_size:
+                continue
 
-        return anomalies if anomalies else [("No EEG Anomalies Detected", "N/A", "N/A")]
+            window_times.append(seg['Timestamp'].mean())
+            for ch in eeg_channels:
+                freqs, psd = welch(seg[ch], fs=sampling_rate, nperseg=window_size)
+                theta = np.trapezoid(psd[(freqs >= 4) & (freqs < 8)], freqs[(freqs >= 4) & (freqs < 8)])
+                alpha = np.trapezoid(psd[(freqs >= 8) & (freqs < 12)], freqs[(freqs >= 8) & (freqs < 12)])
+                beta = np.trapezoid(psd[(freqs >= 13) & (freqs < 30)], freqs[(freqs >= 13) & (freqs < 30)])
 
-    def detect_hrv_anomalies(hrv_df):
-        """
-        Identifies anomalies in HRV data, including sudden drops, instability, and extreme values.
-        Returns a structured list of detected anomalies with timestamps.
-        """
-        anomalies = []
-
-        if 'Timestamp' not in hrv_df.columns:
-            raise ValueError("Expected 'Timestamp' column in HRV data.")
-
-        numeric_columns = hrv_df.select_dtypes(include=['number']).columns.difference(['Timestamp'])
-
-        for channel in numeric_columns:
-            mean_val = hrv_df[channel].mean()
-            std_val = hrv_df[channel].std()
-            threshold_high = mean_val + 2.5 * std_val  # Relaxation (parasympathetic dominance)
-            threshold_low = mean_val - 2.5 * std_val  # Stress (sympathetic dominance)
-
-            for idx, value in hrv_df[channel].items():
-                timestamp = hrv_df.loc[idx, 'Timestamp']
-
-                if value > threshold_high:
-                    anomalies.append((f"HRV {channel} - Unusually High HRV (Relaxation)", timestamp, timestamp))
-                elif value < threshold_low:
-                    anomalies.append((f"HRV {channel} - Unusually Low HRV (Stress)", timestamp, timestamp))
-
-                # Additional logic for instability (fluctuations)
-                if idx > 0:
-                    prev_value = hrv_df.loc[idx - 1, channel]
-                    change = abs(value - prev_value)
-                    if change > std_val * 2:
-                        anomalies.append((f"HRV {channel} - Sudden Fluctuation Detected", timestamp, timestamp))
-
-        return anomalies if anomalies else [("No HRV Anomalies Detected", "N/A", "N/A")]
-
-    def detect_pose_anomalies_windowed(pose_data, window_size=3):
-        """
-        Detects gait and movement anomalies in a windowed approach (default 3s windows).
-        Focuses on stride variability, arm asymmetry, instability, and phase shifts.
-        """
-
-        if 'Timestamp' not in pose_data.columns:
-            return [("Invalid Data: No Timestamp Found", "N/A", "N/A")]
-
-        pose_data = pose_data.fillna(0)  # Handle missing values
-        timestamps = pose_data["Timestamp"].values
-
-        # Convert timestamps into seconds and segment into windows
-        pose_data["Window"] = (pose_data["Timestamp"] // window_size).astype(int)
+                band_powers[ch]['theta'].append(theta)
+                band_powers[ch]['alpha'].append(alpha)
+                band_powers[ch]['beta'].append(beta)
 
         anomalies = []
 
-        # Key joints for analysis
-        key_joints = {
-            "stride": ["Left Hip", "Right Hip"],
-            "arm_swing": ["Left Shoulder", "Right Shoulder"],
-            "instability": ["Left Ankle", "Right Ankle"],
-            "step_phase": ["Left Knee", "Right Knee"],
-        }
+        # 1️⃣ Local band ratio suppression
+        alpha_ratios, beta_ratios = [], []
+        for ch in eeg_channels:
+            for i, t in enumerate(window_times):
+                th = band_powers[ch]['theta'][i]
+                al = band_powers[ch]['alpha'][i]
+                be = band_powers[ch]['beta'][i]
+                total = th + al + be
+                if total == 0:
+                    continue
+                alpha_ratio = al / total
+                beta_ratio = be / total
+                alpha_ratios.append(alpha_ratio)
+                beta_ratios.append(beta_ratio)
 
-        # Process each window separately
-        grouped = pose_data.groupby("Window")
-        for window, group in grouped:
-            t_start, t_end = group["Timestamp"].iloc[0], group["Timestamp"].iloc[-1]
+                if alpha_ratio < alpha_thresh:
+                    anomalies.append(f"Low alpha ratio in {ch} at {t:.2f}s (ratio = {alpha_ratio:.2f})")
+                if beta_ratio < beta_thresh:
+                    anomalies.append(f"Low beta ratio in {ch} at {t:.2f}s (ratio = {beta_ratio:.2f})")
 
-            # 1️⃣ **Stride Length Variability**
-            if all(j in group.columns for j in key_joints["stride"]):
-                stride_diff = np.abs(group["Left Hip"] - group["Right Hip"])
-                if stride_diff.mean() < 10:  # Shortened stride
-                    anomalies.append((f"{t_start}-{t_end}s - Reduced stride length detected", t_start, t_end))
+        # Debug output: band ratio distributions
+        print("Alpha ratio percentiles:", np.percentile(alpha_ratios, [5, 25, 50, 75, 95]))
+        print("Beta ratio percentiles :", np.percentile(beta_ratios, [5, 25, 50, 75, 95]))
 
-            # 2️⃣ **Arm Swing Asymmetry**
-            if all(j in group.columns for j in key_joints["arm_swing"]):
-                arm_diff = np.abs(group["Left Shoulder"] - group["Right Shoulder"])
-                if arm_diff.mean() > 15:  # Uneven arm swings
-                    anomalies.append((f"{t_start}-{t_end}s - Arm swing asymmetry detected", t_start, t_end))
+        # 2️⃣ Global z-score check
+        for band in ['alpha', 'beta']:
+            means = [np.mean(band_powers[ch][band]) for ch in eeg_channels]
+            zs = zscore(means)
+            for ch, z in zip(eeg_channels, zs):
+                if z < z_thresh:
+                    label = "Suppressed Alpha" if band == "alpha" else "Suppressed Beta"
+                    anomalies.append(f"{label} globally in {ch} (z = {z:.2f})")
 
-            # 3️⃣ **Instability Detection (Jitter in Ankles)**
-            if all(j in group.columns for j in key_joints["instability"]):
-                ankle_movement = (group["Left Ankle"] + group["Right Ankle"]) / 2
-                instability_score = np.abs(np.diff(ankle_movement)).mean()
-                if instability_score > 5:  # Detect erratic movement
-                    anomalies.append((f"{t_start}-{t_end}s - Instability detected", t_start, t_end))
+        return anomalies or ["No significant EEG band anomalies detected."]
 
-            # 4️⃣ **Step Phase Shift Detection**
-            if all(j in group.columns for j in key_joints["step_phase"]):
-                knee_phase_diff = np.abs(group["Left Knee"] - group["Right Knee"])
-                if knee_phase_diff.mean() > np.pi/6:  # Delayed stepping phase shift
-                    anomalies.append((f"{t_start}-{t_end}s - Step phase shift detected", t_start, t_end))
-
-        return anomalies if anomalies else [("No Significant Pose Anomalies Detected", "N/A", "N/A")]
-
-
-    ### STRUCTURED DATA PREPARATION ###
-    def generate_anomaly_summary(eeg_data, hrv_data, pose_data):
-        eeg_anomalies = detect_eeg_anomalies(eeg_data) if not eeg_data.empty else []
-        hrv_anomalies = detect_hrv_anomalies(hrv_data) if not hrv_data.empty else []
-        pose_anomalies = detect_pose_anomalies_windowed(pose_data, 3) if not pose_data.empty else []
-
-        structured_summary = {
-            "EEG": {"EEG Anomalies": eeg_anomalies},
-            "HRV": {"HRV Anomalies": hrv_anomalies},
-            "Pose": {"Pose Anomalies": pose_anomalies}
-        }
-        return json.dumps(structured_summary, indent=4)
-
-    def detect_anomalies(data_series, threshold=3):
-        return list(data_series.index[np.abs(zscore(data_series)) > threshold])
-
-    def extract_pose_variability(pose_filtered):
+    def detect_hrv_suppression(hrv_df, suppression_threshold=30):
         """
-        Extracts the standard deviation of keypoint movements (pose variability).
+        Detects HRV suppression based on SDNN (standard deviation of NN intervals).
+        Expects an 'HRV' column containing RR intervals in ms.
         """
-        joint_names = [
-            "Left Shoulder", "Right Shoulder", "Left Elbow", "Right Elbow",
-            "Left Wrist", "Right Wrist", "Left Hip", "Right Hip",
-            "Left Knee", "Right Knee", "Left Ankle", "Right Ankle"
-        ]
+        if 'HRV' not in hrv_df.columns:
+            raise ValueError("Expected 'HRV' column with RR intervals in milliseconds.")
 
-        keypoint_variations = {}
+        sdnn = np.std(hrv_df['HRV'])
 
-        for joint_idx, joint_name in enumerate(joint_names):
-            x_values, y_values = [], []
+        print(f"\n[HRV] SDNN = {sdnn:.2f} ms — {'Suppressed' if sdnn < suppression_threshold else 'Normal'}")
 
-            for _, row in pose_filtered.iterrows():
-                keypoints = row.get('keypoints', [])
-                if isinstance(keypoints, str):
-                    keypoints = ast.literal_eval(keypoints)  # Convert string to list
-                
-                if isinstance(keypoints, list) and len(keypoints) > joint_idx:
-                    keypoint = keypoints[joint_idx]  # Extract joint position
-                    if isinstance(keypoint, (list, tuple)) and len(keypoint) >= 2:
-                        x, y = keypoint[:2]  # Extract x, y coordinates
-                        x_values.append(x)
-                        y_values.append(y)
+        if sdnn < suppression_threshold:
+            return f"HRV suppression detected (SDNN = {sdnn:.2f} ms, below {suppression_threshold} ms threshold)."
+        else:
+            return f"No significant HRV suppression detected (SDNN = {sdnn:.2f} ms)."
 
-            if x_values and y_values:
-                keypoint_variations[joint_name] = {
-                    "std_x": np.std(x_values),
-                    "std_y": np.std(y_values)
-                }
+    def generate_position_based_pose_summary(pose_file):
+        from scipy.signal import find_peaks
+        """
+        Updated summary generator for your current dataset using left-side joints.
+        """
+        try:
+            df = pd.read_csv(pose_file)
+            filename = os.path.basename(pose_file)
+            label = "MCI" if "MCI" in filename else "Healthy"
 
-        return keypoint_variations
+            # Use LEFT joints for motion analysis
+            joint_map = {
+                "hip": "Left Hip",
+                "knee": "Left Knee",
+                "ankle": "Left Ankle"
+            }
 
+            dt = 1 / 30  # 30 FPS
+            features = {
+                "subject_id": filename.replace(".csv", ""),
+                "label": label
+            }
+
+            for key, col in joint_map.items():
+                if col not in df.columns:
+                    print(f"⚠️ Missing joint: {col}")
+                    features[f"{key}_mean"] = 0
+                    features[f"{key}_std"] = 0
+                    features[f"{key}_range"] = 0
+                    features[f"{key}_acc_std"] = 0
+                    features[f"{key}_jerk"] = 0
+                    continue
+
+                x = df[col].values
+                velocity = np.gradient(x, dt)
+                acceleration = np.gradient(velocity, dt)
+                jerk = np.gradient(acceleration, dt)
+
+                features[f"{key}_mean"] = np.mean(x)
+                features[f"{key}_std"] = np.std(x)
+                features[f"{key}_range"] = np.ptp(x)
+                features[f"{key}_acc_std"] = np.std(acceleration)
+                features[f"{key}_jerk"] = np.mean(np.abs(jerk))
+
+            # Add cadence if both ankles and timestamps are available
+            if all(col in df.columns for col in ["Left Ankle", "Right Ankle", "Timestamp"]):
+                left = df["Left Ankle"].values
+                right = df["Right Ankle"].values
+                timestamps = df["Timestamp"].values
+
+                if timestamps[-1] > 1000:
+                    timestamps = timestamps / 1000
+
+                duration = timestamps[-1] - timestamps[0]
+                step_length = np.abs(np.diff(left) - np.diff(right))
+                stride_length = np.abs(np.diff(left[::2]))
+                peaks, _ = find_peaks(-left, distance=20)
+                cadence = (len(peaks) / duration) * 60 if duration > 0 else 0
+
+                features["step_length_mean"] = np.mean(step_length)
+                features["stride_length_mean"] = np.mean(stride_length)
+                features["cadence"] = cadence
+
+            return features
+
+        except Exception as e:
+            print(f"❌ Error in generate_position_based_pose_summary for {pose_file}: {e}")
+            return {"subject_id": os.path.basename(pose_file).replace(".csv", ""), "label": "Unknown", "error": str(e)}
+
+    def generate_combined_summary(eeg_df, hrv_df, pose_summary):
+        from scipy.signal import welch
+        from scipy.stats import zscore
+        import numpy as np
+
+        # --- EEG SUMMARY ---
+        eeg_channels = eeg_df.select_dtypes(include=['number']).columns.difference(['Timestamp'])
+        window_size = 512
+        band_powers = {ch: {'theta': [], 'alpha': [], 'beta': []} for ch in eeg_channels}
+        for w in range(len(eeg_df) // window_size):
+            seg = eeg_df.iloc[w * window_size:(w + 1) * window_size]
+            for ch in eeg_channels:
+                freqs, psd = welch(seg[ch], fs=256, nperseg=window_size)
+                for band, lo, hi in [('theta', 4, 8), ('alpha', 8, 12), ('beta', 13, 30)]:
+                    power = np.trapezoid(psd[(freqs >= lo) & (freqs < hi)], freqs[(freqs >= lo) & (freqs < hi)])
+                    band_powers[ch][band].append(power)
+
+        means = {band: np.mean([np.mean(band_powers[ch][band]) for ch in eeg_channels])
+                for band in ['theta', 'alpha', 'beta']}
+        ta_ratio = means['theta'] / (means['alpha'] + 1e-6)
+        tb_ratio = means['theta'] / (means['beta'] + 1e-6)
+
+        eeg_summary = []
+        if means['alpha'] < 1.0:
+            eeg_summary.append("Alpha power is globally reduced.")
+        else:
+            eeg_summary.append("Alpha power is within healthy range.")
+        if means['theta'] > 0.3:
+            eeg_summary.append("Theta activity is elevated.")
+        else:
+            eeg_summary.append("Theta levels are normal.")
+        eeg_summary.append(f"Theta/Alpha ratio: {ta_ratio:.2f}")
+        eeg_summary.append(f"Theta/Beta ratio: {tb_ratio:.2f}")
+
+        # --- HRV SUMMARY ---
+        if 'HRV' in hrv_df.columns:
+            sdnn = np.std(hrv_df['HRV'])
+            if sdnn < 30:
+                hrv_summary = f"HRV suppression detected (SDNN = {sdnn:.2f} ms)."
+            else:
+                hrv_summary = f"HRV appears normal (SDNN = {sdnn:.2f} ms)."
+        else:
+            hrv_summary = "HRV data missing."
+
+        # --- Pose SUMMARY ---
+        pose_lines = []
+        for k, v in pose_summary.items():
+            if isinstance(v, float):
+                pose_lines.append(f"{k.replace('_', ' ')} = {v:.2f}")
+        pose_str = "; ".join(pose_lines)
+
+        # --- Final Combined Summary ---
+        return (
+            "EEG Summary:\n" + "\n".join(eeg_summary) + "\n\n"
+            "HRV Summary:\n" + hrv_summary + "\n\n"
+            "Pose Summary:\n" + pose_str
+        )
+
+    def build_llm_prompt_from_combined_summary(combined_summary_text, user_query=None):
+        prompt_parts = []
+
+        # 🧠 MCI-Centric Unified Ontology
+        prompt_parts.append("""
+    Multimodal Ontology Reference:
+    Mild Cognitive Impairment (MCI) may manifest through a combination of cognitive and subtle motor irregularities. Interpret the subject's condition based on the following:
+
+    - EEG markers:
+    - Increased Theta power and decreased Alpha power, especially in frontal and parietal regions, are commonly associated with MCI.
+    - Suppressed Beta activity may indicate cognitive slowing.
+
+    - HRV markers:
+    - Reduced heart rate variability (e.g., SDNN < 30 ms) is linked to decreased autonomic regulation and cognitive decline.
+
+    - Gait (pose-derived) markers:
+    - Healthy gait patterns exhibit wide joint movement ranges, smooth transitions, and consistent acceleration.
+    - MCI-related gait changes may include reduced range of motion, higher jerk (abrupt changes in motion), and greater acceleration variability across joints, even without overt motor disability.
+
+    Diagnostic Guidance:
+    - Classify as **MCI** if EEG and/or HRV features indicate cognitive dysfunction, especially when supported by mild motor irregularities.
+    - Classify as **Control** if all modalities are within normal patterns.
+    - Classify as **Needs clinical review** if findings are weak, borderline, or inconsistent.
+
+    Use all three modalities in combination to support a holistic evaluation.
+    """)
+
+        # 🧪 Combined Summary
+        prompt_parts.append("Multimodal Summary:\n" + combined_summary_text.strip())
+
+        # 🧾 Task logic
+        if user_query:
+            prompt_parts.append(f"\nUser Question:\n{user_query.strip()}")
+        else:
+            prompt_parts.append("""
+    Task:
+    Based on the EEG, HRV, and Gait summaries provided above, assess the subject's cognitive-motor status.
+
+    Respond using the following format:
+    Conclusion: [MCI / Control / Needs clinical review]
+    Explanation: [Concise reasoning using any or all modalities]
+    """)
+
+        return "\n\n".join(prompt_parts)
+    
     @app.callback(
         Output('query-response', 'children'),
         [Input('submit-query-button', 'n_clicks')],
-        [State('query-input', 'value'),
-        State('annotations-store', 'data'),
-        State('video-seek-range-slider', 'value')]
+        prevent_initial_call=True
     )
-    def process_query(n_clicks, query, annotations, slider_value):
-        if n_clicks == 0 or not query:
+    def process_query(n_clicks):
+        if n_clicks == 0:
             raise PreventUpdate
 
-        """
-        Processes data, generates insights, and compares LLM outputs.
-        """
-        anomaly_summary = json.dumps({
-            "EEG": detect_eeg_anomalies(eeg_data),
-            "HRV": detect_hrv_anomalies(hrv_data),
-            "Pose": detect_pose_anomalies_windowed(pose_data,3)
-        }, indent=4)
-
-        system_prompt = f"""
-        You are an AI analyzing EEG, HRV, and Pose data.
-
-        **Ontology Information**:
-        {ontology_json}
-
-        **Data Summary**:
-        {anomaly_summary}
-
-        **User Query**:
-        {query}
-        """
-
-        response = call_llm_api(system_prompt)
-
-        # return html.Pre(f"### LLM Response:\n{response}\n\n### Ontology JSON:\n{ontology_json}\n\n### Data Summary:\n{structured_summary}", style={"white-space": "pre-wrap", "font-size": "13px", "background-color": "#fff"})
-        return html.Pre(f"{anomaly_summary},{response}", style={"white-space": "pre-wrap", "font-size": "13px", "background-color": "#fff"})
-
-    # Function to call the OpenAI API
-    def call_llm_api(query):
         try:
-            # The system message will define the context for the AI (e.g., it's analyzing EEG and HRV data)
-            system_message = {"role": "system",
-                              "content": "You analyze EEG, HRV, and Pose data."}
+            # Step 1: Generate multimodal summary
+            pose_summary = generate_position_based_pose_summary(pose_file_path)
+            combined_summary = generate_combined_summary(eeg_data, hrv_data, pose_summary)
 
-            # The user message will contain the user's question/query
-            user_message = {"role": "user", "content": query}
+            # Step 2: Use LLM prompt with data + user query
+            system_prompt = build_llm_prompt_from_combined_summary(combined_summary)
+            full_prompt = f"{system_prompt}"
 
-            # Make the API call using the new chat completion approach
+            # Step 3: Call LLM
+            response = call_llm_api(full_prompt)
+
+            return html.Pre(response, style={
+                "white-space": "pre-wrap",
+                "font-size": "13px",
+                "background-color": "#fff",
+                "padding": "10px"
+            })
+
+        except Exception as e:
+            return html.Pre(f"❌ Error: {str(e)}", style={"white-space": "pre-wrap", "color": "red"})
+
+    def call_llm_api(prompt_text):
+        try:
+            messages = [
+                {"role": "system", "content": "You are an expert system interpreting EEG, HRV, and Pose summaries for neurocognitive diagnosis."},
+                {"role": "user", "content": prompt_text}
+            ]
+
             response = client.chat.completions.create(
                 model="gpt-4o",
-                messages=[system_message, user_message],
+                messages=messages,
                 max_tokens=700,
                 temperature=0.7
             )
 
-            # Extract the assistant's response
             return response.choices[0].message.content
 
         except Exception as e:
@@ -1079,9 +1153,9 @@ def create_dash_app(eeg_file_path, hrv_file_path):
     return app
 
 if __name__ == "__main__":
-    eeg_file_path = "data\eeg_data_Motor Task_MCI_20250307_221718.csv"
-    hrv_file_path = "data\hrv_data_Motor Task_MCI_20250307_221718.csv"
-    pose_file_path = "data\walking_pose_Motor Task_MCI_trial1_20250307_221718_590611.csv"
+    eeg_file_path = "data\eeg_data_Baseline Resting_Healthy_trial16_20250503_155735_948601.csv"
+    hrv_file_path = "data\hrv_data_Baseline Resting_Healthy_trial16_20250503_155740_097657.csv"
+    pose_file_path = "data\walking_pose_Baseline Resting_Healthy_trial16_20250503_155740_162179.csv"
 
     eeg_data = pd.read_csv(eeg_file_path)
     hrv_data = pd.read_csv(hrv_file_path)
